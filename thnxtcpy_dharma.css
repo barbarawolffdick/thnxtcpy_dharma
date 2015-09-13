@@ -1,1 +1,131 @@
 /* CSS declarations go here */
+
+#logo{
+    width: 100%;
+}
+
+header{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+header a{
+    display: inline-block;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+.what{
+    background-color: #fff;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.what p {
+    font-size: 2.6em;
+    color: #666666;
+    text-align: center;
+}
+
+.what img{
+    width: 15rem;
+    margin-top: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+.who { 
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    background-color: #f7f5f5;
+    text-align: right;
+}
+
+.who span{
+    font-size: 4.3rem;
+    color: #222222;
+    line-height: 5.6rem;
+}
+
+.how{
+    background-color: #f7f5f5;
+    padding-bottom: 10rem;
+}
+
+.how h2{
+    background-color: #f7f5f5;
+    font-weight: 800;
+    margin-bottom: 7rem;
+}
+
+.how .cards .card{
+    background-color: #fff;
+    height: 34rem;
+}
+
+.how .cards .card p{
+    font-size: 2rem;
+    color: #000000;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.how .cards .card img{
+    width: 30%;
+    margin-left: 10rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+
+#first img{
+    margin-top: 7rem;
+}
+
+#first p{
+    margin-top: 2.71rem;
+} 
+
+#third img{
+    margin-top: 7rem;
+}
+
+
+#third p, #fourth p{
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 0.8rem;
+}
+
+#fourth img{
+    margin-top: 5.3rem;
+    width: 43%;
+    margin-left: 8rem;
+}
+
+footer{
+	background-color: #454850;
+}
+
+footer p{
+	margin-bottom: 0;
+	color: #fff;
+	padding-bottom: 1rem;
+}
+
+footer img{
+    width: 100%;
+}
+
+
+
+.hide{
+    display: none;
+}

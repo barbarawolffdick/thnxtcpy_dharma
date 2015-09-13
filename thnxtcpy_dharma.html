@@ -1,14 +1,104 @@
 <head>
   <title>thnxtcpy_dharma</title>
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+<!--   <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+  {{> hello}} -->
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="three columns">
+          <a href="www.thenextcompany.com">
+            <img src="/logotnc.png" alt="Home" id="logo">
+          </a>
+        </div>
+        <div class="nine columns">
+          <div class="options u-pull-right">
+            <a class="button" href="#what">What</a>
+            <a class="button" href="#who">Who</a>
+            <a class="button button-primary" href="#">Tell your story</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="banner">
+    <div class="container">
+      <h1 class="hide"> The Next Company </h1>
+      <img src="/banner.png" alt="Banner">
+    </div>
+  </div>
+
+  <div class="what row" id="what">
+    <h2 class="hide"> What </h2>
+    <div class="container">
+      <p> An initiative that will <b>explore business opportunities</b> in the mobile arena by <b>creating an environment</b> that will facilitate the selection and prototyping, the MVP building, the budgeting process, the funding strategy and the <b>implementation of innovative mobile businesses.</b></p>
+      <img src="/logo-icontnc.png" alt="Home">
+    </div>
+  </div>
+
+  <div class="who row" id="who">
+    <div class="container">
+      <div class="offset-by-seven column five columns">
+        <span> TheNextCompany is initiative of Grupo ABC with the support of Tesla</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="how row">
+    <div class="container">
+      <h2 id="how">How it works</h2>
+      <div class="cards">
+        
+        <div class="card three columns" id="first">
+          <img src="/enveloptnc.png" alt="envelop">
+          <p>We will receive and select projects of mobile businesses</p>
+        </div>
+        
+        <div class="card three columns" id="second">
+          <img src="/mobiletnc.png" alt="envelop">
+          <p>Validate the entrepreneurs and the business plans</p>
+        </div>
+
+        <div class="card three columns" id="third">
+          <img src="/trophytnc.png" alt="envelop">
+          <p>Select the winners and lead investment rounds</p>
+        </div>
+
+        <div class="card three columns" id="fourth">
+          <img src="/networktnc.png" alt="envelop">
+          <p>Support the startup phase of the companies</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="/footer.png" alt="tell us your story">
+    <div class="container">
+      <p>Copyright 2016 © Grupo ABC Todos direitos reservados</p>
+    </div>
+  </footer>
+
+
 </body>
 
-<template name="hello">
+<!-- <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
-</template>
+</template> -->
