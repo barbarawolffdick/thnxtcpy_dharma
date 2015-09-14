@@ -8,3 +8,5 @@ meteor-platform
 autopublish
 insecure
 kadira:blaze-layout
+showdown
+iron:router
