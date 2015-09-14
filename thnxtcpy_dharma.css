@@ -9,8 +9,24 @@ header{
     margin-bottom: 2rem;
 }
 
+header .item{
+	color: #666;
+}
+
 header a{
     display: inline-block;
+    text-decoration: none;
+    color: #df4f1a;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+
+header a:last-child{
+	margin-right: 0;
+}
+
+header a:hover{
+	color: #aa3a10;
 }
 
 .banner img{
