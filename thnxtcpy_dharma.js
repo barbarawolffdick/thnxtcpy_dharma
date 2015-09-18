@@ -77,6 +77,107 @@ if(Meteor.isClient) {
         $('.step10').removeClass('hide');
       }
     },
+    'click .continue-2-btn': function(event) {
+      $('.step5').addClass('hide');
+      $('.step6').addClass('hide');
+      $('.step7').addClass('hide');
+      $('.step8').addClass('hide');
+      $('.step9').addClass('hide');
+      $('.step10').addClass('hide');
+      $('.question1').removeClass('hide');
+    },
+    'blur .company-url': function(event) {
+      var text = $('.company-url').val();
+      if(text !== '') {
+        Session.set('companyUrl', text);
+        $('.question1').addClass('hide');
+        $('.question2').removeClass('hide');
+      }
+    },
+    'blur .company-video': function(event) {
+      var text = $('.company-video').val();
+      if(text !== '') {
+        Session.set('companyVideo', text);
+        $('.question2').addClass('hide');
+        $('.question3').removeClass('hide');
+      }
+    },
+    'blur .company-press': function(event) {
+      var text = $('.company-press').val();
+      if(text !== '') {
+        Session.set('companyPress', text);
+        $('.question3').addClass('hide');
+        $('.question4').removeClass('hide');
+      }
+    },
+    'blur .company-needs': function(event) {
+      var text = $('.company-needs').val();
+      if(text !== '') {
+        Session.set('companyNeeds', text);
+        $('.question4').addClass('hide');
+        $('.question5').removeClass('hide');
+      }
+    },
+    'blur .company-help': function(event) {
+      var text = $('.company-help').val();
+      if(text !== '') {
+        Session.set('companyHelp', text);
+        $('.question5').addClass('hide');
+        $('.question6').removeClass('hide');
+      }
+    },
+    'blur .company-feel': function(event) {
+      var text = $('.company-feel').val();
+      if(text !== '') {
+        Session.set('companyFeel', text);
+        $('.question6').addClass('hide');
+        $('.question7').removeClass('hide');
+      }
+    },
+    'blur .company-people-1': function(event) {
+      var text1 = $('.company-people-1').val();
+      var text2 = $('.company-people-2').val();
+      var text3 = $('.company-people-3').val();
+      if(text1 !== '' && text2 !== '' && text3 !== '') {
+        Session.set('companyPeople1', text1);
+        Session.set('companyPeople2', text2);
+        Session.set('companyPeople3', text3);
+        $('.question7').addClass('hide');
+        $('.question8').removeClass('hide');
+      }
+    },
+    'blur .company-people-2': function(event) {
+      var text1 = $('.company-people-1').val();
+      var text2 = $('.company-people-2').val();
+      var text3 = $('.company-people-3').val();
+      if(text1 !== '' && text2 !== '' && text3 !== '') {
+        Session.set('companyPeople1', text1);
+        Session.set('companyPeople2', text2);
+        Session.set('companyPeople3', text3);
+        $('.question7').addClass('hide');
+        $('.question8').removeClass('hide');
+      }
+    },
+    'blur .company-people-3': function(event) {
+      var text1 = $('.company-people-1').val();
+      var text2 = $('.company-people-2').val();
+      var text3 = $('.company-people-3').val();
+      if(text1 !== '' && text2 !== '' && text3 !== '') {
+        Session.set('companyPeople1', text1);
+        Session.set('companyPeople2', text2);
+        Session.set('companyPeople3', text3);
+        $('.question7').addClass('hide');
+        $('.question8').removeClass('hide');
+      }
+    },
+    'blur .company-important': function(event) {
+      var text = $('.company-important').val();
+      if(text !== '') {
+        Session.set('companyImportant', text);
+        $('.question8').addClass('hide');
+        $('.finalStepYes').removeClass('hide');
+      }
+    },
   });
 
   Template.form.helpers({
