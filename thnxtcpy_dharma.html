@@ -102,6 +102,7 @@
   {{> header }}
   <div class="container">
       {{> form }}
+      {{> stepCounter }}
   </div>
 </template>
 
@@ -223,6 +224,12 @@
     <input class="company-important" type="text">
   </span>
   <span class="finalStepYes hide">
-    (I’m done) We are looking for disruptive ideas but there are lots of interesting incremental innovation companies that we are interested too. Let’s see what your company is. We’ll take a look at what you have said about {{ companyName }} – hope you were not way to optimistic of your own project – in that case we will not select your company – and come back to you in a while – don’t expect less then a few weeks return from us, there are lots of people talking to us – with the next steps. We’re expecting crazy stuff to do together and great business opportunities to explore! Talk to you soon!
+    (I’m done) We are looking for disruptive ideas but there are lots of interesting incremental innovation companies that we are interested too. Let’s see what your company is. We’ll take a look at what you have said about {{ companyName }} – hope you were not way to optimistic of your own project – in that case we will not select your company – and come back to you in a while – don’t expect less then a few weeks return from us, there are lots of people talking to us – with the next steps. We’re expecting crazy stuff to do together and great business opportunities to explore! Talk to you soon!<br>
+    <button class="send-btn">Send</button>
   </span>
+</template>
+<template name="stepCounter">
+  <div>
+    {{ counter }} of 20 steps. 
+  </div>
 </template>
