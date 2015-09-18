@@ -100,6 +100,91 @@
 
 <template name="tellYourHistory">
   {{> header }}
-  <h2> Form here </h2>
-  {{> footer }}
+  <div class="container">
+      {{> form }}
+  </div>
+</template>
+
+<template name="form">
+  <span class="step1">
+    So you are interested in talking to us. Great, 
+    <span class="your-name" contenteditable="true">
+      Your Name
+    </span>
+  </span>
+  <span class="step2 hide">
+    welcome to The Next Company, {{ yourName }}, together we will change the future! Are you ready?  <br>
+    <button class="continue-btn">Continue</button>
+  </span>
+
+  <span class="step3 hide">
+    <span class="company-name" contenteditable="true">
+      Your Company
+    </span>
+  </span>
+  <span class="step4 hide">
+    is a
+    <select class="company-type">
+      <option value="">Select an option</option>
+      <option value="idea">Idea</option>
+      <option value="keynote">Keynote Presentantion</option>
+      <option value="2more">2 or more years old company</option>
+      <option value="startup">Startup</option>
+    </select>
+    <span class="company-type-idea hide">
+      just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.
+    </span>
+    <span class="company-type-keynote hide">
+      keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.
+    </span>
+    <span class="company-type-2more hide">
+      2 or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.
+    </span>
+    <span class="company-type-startup hide">
+      startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?
+      <select class="disruptive-question">
+        <option value="">Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </span>
+  </span>
+
+  <span class="step5 hide">
+    This is great! Which area {{ companyName }} will disrupt?
+    <input class="area-disruption" type="text">.
+  </span>
+  <span class="step6 hide">
+    {{ companyName }}'s disruption is a 
+    <select class="disruption-type">
+      <option value="">Select an option</option>
+      <option value="">business model distuprion</option>
+      <option value="">product disruption</option>
+      <option value="">process disruption</option>
+    </select>
+  </span>
+  <span class="step7 hide">
+    and will create a
+    <select class="new-type">
+      <option value="">Select an option</option>
+      <option value="">new business opportunity</option>
+      <option value="">new market</option>
+      <option value="">new segment</option>
+    </select>
+  </span>
+  <span class="step8 hide">
+    in
+    <select class="range-type">
+      <option value="">Select an option</option>
+      <option value="">our country</option>
+      <option value="">the world</option>
+    </select>
+  </span>
+  <span class="step9 hide">
+    If you had to describe {{ companyName }} in 140 characters, one tweet, {{ companyName }}  
+    <input class="company-description" type="text">.
+  </span>
+  <span class="step10 hide">
+    Interesting. Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.
+  </span>
 </template>
