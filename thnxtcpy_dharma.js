@@ -61,7 +61,10 @@ if(Meteor.isClient) {
         $('.step4').addClass('hide');
         $('.step5').removeClass('hide');
       } else {
-        //later
+        incStepCounter();
+        $('.step3').addClass('hide');
+        $('.step4').addClass('hide');
+        $('.step5-no').removeClass('hide');
       }
     },
     'blur .area-disruption': function(event) {
@@ -72,9 +75,29 @@ if(Meteor.isClient) {
         $('.step6').removeClass('hide');
       }
     },
+    'blur .company-area': function(event) {
+      var text = $('.company-area').val();
+      if(text !== '') {
+        incStepCounter();
+        Session.set('companyArea', text);
+        $('.step6-no').removeClass('hide');
+      }
+    },
+    'blur .business-opportunity': function(event) {
+      var text = $('.business-opportunity').val();
+      if(text !== '') {
+        incStepCounter();
+        Session.set('businessOpportunity', text);
+        $('.step8').removeClass('hide');
+      }
+    },
     'change .disruption-type': function(event) {
       incStepCounter();
       $('.step7').removeClass('hide');
+    },
+    'change .differentiation-type': function(event) {
+      incStepCounter();
+      $('.step7-no').removeClass('hide');
     },
     'change .new-type': function(event) {
       incStepCounter();
@@ -95,8 +118,11 @@ if(Meteor.isClient) {
     'click .continue-2-btn': function(event) {
       incStepCounter();
       $('.step5').addClass('hide');
+      $('.step5-no').addClass('hide');
       $('.step6').addClass('hide');
+      $('.step6-no').addClass('hide');
       $('.step7').addClass('hide');
+      $('.step7-no').addClass('hide');
       $('.step8').addClass('hide');
       $('.step9').addClass('hide');
       $('.step10').addClass('hide');
