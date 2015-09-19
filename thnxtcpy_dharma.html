@@ -11,23 +11,12 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <template name="header">
   <div class="container">
     <header>
-      <div class="row">
-        <div class="three columns">
-          <a href="www.thenextcompany.com">
-            <img src="/logotnc.png" alt="Home" id="logo">
-          </a>
-        </div>
-        <div class="nine columns">
-          <div class="options u-pull-right" id="menu">
-            <a class="item" href="/#what">WHAT</a>
-            <a class="item" href="/#who">WHO</a>
-            <a class="action-item" href="tell_your_history">TELL YOUR STORY</a>
-          </div>
-        </div>
-      </div>
+      <img src="/logotnc.png" alt="Home" id="logo">
+        <!-- a class="action-item" href="tell_your_history">TELL YOUR STORY</a-->
     </header>
   </div>
 </template>
@@ -40,20 +29,25 @@
     </div>
   </footer>
 </template>
+
 <template name="home">
   {{> header }}
+
   <section class="banner">
-    <div class="container">
+    <div class="">
       <h1 class="hide"> The Next Company </h1>
-      <img src="/banner.png" alt="Banner">
+      <a class="call-to-action"> TELL US YOUR STORY</a>
+      <img src="/banner01.png" alt="Banner">
     </div>
   </section>
 
   <section class="what row" id="what">
     <h2 class="hide"> What </h2>
     <div class="container">
-      <p> An initiative that will <b>explore business opportunities</b> in the mobile arena by <b>creating an environment</b> that will facilitate the selection and prototyping, the MVP building, the budgeting process, the funding strategy and the <b>implementation of innovative mobile businesses.</b></p>
-      <img src="/logo-icontnc.png" alt="Home">
+      <div class="">
+        <p> An initiative that will <b>explore business opportunities</b> in the mobile arena by <b>creating an environment</b> that will facilitate the selection and prototyping, the MVP building, the budgeting process, the funding strategy and the <b>implementation of innovative mobile businesses.</b></p>
+        <img src="/logo-icontnc.png" alt="Home">
+      </div>
     </div>
   </section>
 
@@ -62,9 +56,10 @@
       <div class="offset-by-seven column five columns">
         <span> TheNextCompany is initiative of Grupo ABC with the support of Tesla</span>
       </div>
-
     </div>
   </section>
+
+
 
   <section class="how row">
     <div class="container">
@@ -91,12 +86,12 @@
           <p>Support the startup phase of the companies</p>
         </div>
 
-
       </div>
     </div>
   </section>
   {{> footer }}
 </template>
+
 
 <template name="tellYourHistory">
   {{> header }}
@@ -105,6 +100,10 @@
       {{> stepCounter }}
   </div>
 </template>
+
+
+<!--Início do formulário-->
+
 
 <template name="form">
   <span class="step1">

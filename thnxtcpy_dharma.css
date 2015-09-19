@@ -1,10 +1,7 @@
 /* CSS declarations go here */
 
-#logo{
-    width: 100%;
-}
 
-header{
+header{ 
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -29,10 +26,32 @@ header a:hover{
 	color: #aa3a10;
 }
 
+header img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 32px;
+    margin-top: 25px;
+}
+
 .banner img{
     width: 100%;
 }
 
+.call-to-action{
+    font-size: 5.7rem;
+    color: #fff;
+    line-height: 6.7rem;
+    font-family: Raleway-Bold;
+    position: absolute;
+    right: 50rem;
+    top: 32.5rem;
+    border: 0.8rem solid white;
+    z-index: 2;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+}
 
 .what{
     background-color: #fff;
@@ -41,9 +60,10 @@ header a:hover{
 }
 
 .what p {
-    font-size: 2.6em;
-    color: #666666;
     text-align: center;
+    font-size: 3rem;
+    color: #3f4045;
+    line-height: 5.5rem;
 }
 
 .what img{
