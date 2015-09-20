@@ -39,7 +39,7 @@ header img{
     width: 100%;
 }
 
-.call-to-action{
+a.call-to-action{
     font-size: 5.7rem;
     color: #fff;
     line-height: 6.7rem;
@@ -51,7 +51,19 @@ header img{
     z-index: 2;
     padding-left: 3.4rem;
     padding-right: 3.4rem;
+    text-decoration: none;
+    opacity: 0.75;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
+
+a.call-to-action:hover{
+    opacity: 1;
+}
+
 
 .what{
     background-color: #fff;
@@ -90,60 +102,63 @@ header img{
 
 .how{
     background-color: #f7f5f5;
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
+    padding-top: 7rem;
 }
 
 .how h2{
     background-color: #f7f5f5;
-    font-weight: 800;
-    margin-bottom: 7rem;
+    margin-left: 9.6rem;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+.how h3{
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+.how .lead{
+    font-size: 1.8rem;
+    margin-left: 9.6rem;
+    margin-bottom: 5rem;
+
 }
 
 .how .cards .card{
     background-color: #fff;
-    height: 34rem;
+    height: 30rem;
+    width: 23rem;
+    float: left;
+    margin-left: 10rem;
 }
 
 .how .cards .card p{
-    font-size: 2rem;
     color: #000000;
-    line-height: 2.4rem;
+    line-height: 2.3rem;
     text-align: center;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
 }
 
 .how .cards .card img{
-    width: 30%;
-    margin-left: 10rem;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5rem;
 }
-
-
-#first img{
-    margin-top: 7rem;
-}
-
-#first p{
-    margin-top: 2.71rem;
-} 
 
 #third img{
-    margin-top: 7rem;
-}
-
-
-#third p, #fourth p{
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-    margin-top: 0.8rem;
+    margin-bottom: 3.5rem;
+    margin-top: 1.5rem;
 }
 
 #fourth img{
-    margin-top: 5.3rem;
-    width: 43%;
-    margin-left: 8rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 
 footer{
