@@ -101,8 +101,8 @@
 
 <template name="form">
   <div class="row">
-    <span class="step1 two-thirds column">
-      So, you are interested in talking to us. That's great! What is your company name? 
+    <span class="step1 offset-by-two columns two-thirds column">
+      So you are interested in talking to us, that's great! What is your name? 
       <span class="your-name" contenteditable="true">
         Type it here
       </span>
@@ -111,14 +111,14 @@
 
 
   <div class="row">
-    <span class="step2 hide two-thirds column">
-      Welcome to The Next Company, {{ yourName }}, together we will change the future! Are you ready?<br>
+    <span class="step2 hide offset-by-two columns two-thirds column two-thirds column">
+      , welcome to The Next Company! Together we will change the future! Are you ready?<br>
       <button class="continue-btn">Continue</button>
     </span>
   </div>
 
   <div class="row">
-    <span class="step3 hide two-thirds column">
+    <span class="step3 hide offset-by-two columns two-thirds column two-thirds column">
       <span class="company-name" contenteditable="true">
         {{ yourName }} is
       </span>
@@ -126,7 +126,7 @@
   </div>
 
   <div class="row">
-    <span class="step4 hide two-thirds column">
+    <span class="step4 hide offset-by-two columns two-thirds column two-thirds column">
       <select class="company-type">
         <option value="">select an option</option>
         <option value="idea">Idea</option>
@@ -155,99 +155,119 @@
     </span>
   </div>
 
-  <span class="step5 hide">
-    This is great! Which area {{ companyName }} will disrupt?
-    <input class="area-disruption" type="text">.
-  </span>
-  <span class="step5-no hide">
-    This is ok. Which area is {{ companyName }}?
-    <input class="company-area" type="text">.
-  </span>
-  <span class="step6 hide">
-    {{ companyName }}'s disruption is a 
-    <select class="disruption-type">
-      <option value="">select an option</option>
-      <option value="">business model distuprion</option>
-      <option value="">product disruption</option>
-      <option value="">process disruption</option>
-    </select>
-  </span>
-  <span class="step6-no hide">
-    {{ companyName }}'s differentiation is about 
-    <select class="differentiation-type">
-      <option value="">select an option</option>
-      <option value="">incremental innovation</option>
-      <option value="">doing better something already being done</option>
-      <option value="">a local copy cat</option>
-    </select>
-  </span>
-  <span class="step7 hide">
-    and will create a
-    <select class="new-type">
-      <option value="">select an option</option>
-      <option value="">new business opportunity</option>
-      <option value="">new market</option>
-      <option value="">new segment</option>
-    </select>
-  </span>
-  <span class="step7-no hide">
-    and creates a new business opportunity because of
-    <input class="business-opportunity" type="text">.
-  </span>
-  <span class="step8 hide">
-    in
-    <select class="range-type">
-      <option value="">select an option</option>
-      <option value="">our country</option>
-      <option value="">the world</option>
-    </select>
-  </span>
-  <span class="step9 hide">
-    If you had to describe {{ companyName }} in 140 characters, one tweet, {{ companyName }}  
-    <input class="company-description" type="text">.
-  </span>
-  <span class="step10 hide">
-    Interesting. Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.<br>
-    <button class="continue-2-btn">Continue</button>
-  </span>
-  <span class="question1 hide">
-    {{ companyName }}'s URL
-    <input class="company-url" type="text">
-  </span>
-  <span class="question2 hide">
-    Is there a video presentation? If not, please do one and send us!
-    <input class="company-video" type="text">
-  </span>
-  <span class="question3 hide">
-    Where you guys performed on the press?
-    <input class="company-press" type="text">
-  </span>
-  <span class="question4 hide">
-    What do you don’t want from us?
-    <input class="company-needs" type="text">
-  </span>
-  <span class="question5 hide">
-    How to think The Next Company could help you?
-    <input class="company-help" type="text">
-  </span>
-  <span class="question6 hide">
-    Do you understand we will ask for a piece of {{ companyName }} in exchange for the support we’ll give you? Please explain how do you feel about this.
-    <input class="company-feel" type="text">
-  </span>
-  <span class="question7 hide">
-    Can you give us 3 people (email/phone), which could talk about {{ companyName }}?
-    <input class="company-people-1" type="text">
-    <input class="company-people-2" type="text">
-    <input class="company-people-3" type="text">
-  </span>
-  <span class="question8 hide">
-    Is there something we did not ask you but you think it’s important?
-    <input class="company-important" type="text">
-  </span>
-  <span class="finalStepYes hide">
-    (I’m done) We are looking for disruptive ideas but there are lots of interesting incremental innovation companies that we are interested too. Let’s see what your company is. We’ll take a look at what you have said about {{ companyName }} – hope you were not way to optimistic of your own project – in that case we will not select your company – and come back to you in a while – don’t expect less then a few weeks return from us, there are lots of people talking to us – with the next steps. We’re expecting crazy stuff to do together and great business opportunities to explore! Talk to you soon!<br>
-    <button class="send-btn">Send</button>
-  </span>
+
+  <div class="row">
+    <span class="step5 hide offset-by-two columns two-thirds column two-thirds column">
+      This is great! Which area {{ companyName }} will disrupt?
+      <input class="area-disruption" type="text">.
+    </span>
+    <span class="step5-no hide">
+      This is ok. Which area is {{ companyName }}?
+      <input class="company-area" type="text">.
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step6 hide offset-by-two columns two-thirds column two-thirds column">
+      {{ companyName }}'s disruption is a 
+      <select class="disruption-type">
+        <option value="">select an option</option>
+        <option value="">business model distuprion</option>
+        <option value="">product disruption</option>
+        <option value="">process disruption</option>
+      </select>
+    </span>
+    <span class="step6-no hide">
+      {{ companyName }}'s differentiation is about 
+      <select class="differentiation-type">
+        <option value="">select an option</option>
+        <option value="">incremental innovation</option>
+        <option value="">doing better something already being done</option>
+        <option value="">a local copy cat</option>
+      </select>
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step7 hide offset-by-two columns two-thirds column two-thirds column">
+      and will create a
+      <select class="new-type">
+        <option value="">select an option</option>
+        <option value="">new business opportunity</option>
+        <option value="">new market</option>
+        <option value="">new segment</option>
+      </select>
+    </span>
+    <span class="step7-no hide">
+      and creates a new business opportunity because of
+      <input class="business-opportunity" type="text">.
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step8 hide offset-by-two columns two-thirds column two-thirds column">
+      in
+      <select class="range-type">
+        <option value="">select an option</option>
+        <option value="">our country</option>
+        <option value="">the world</option>
+      </select>
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step9 hide offset-by-two columns two-thirds column two-thirds column">
+      If you had to describe {{ companyName }} in 140 characters, one tweet, {{ companyName }}  
+      <input class="company-description" type="text">.
+    </span>
+  </div>
+
+  <div class="row">
+
+    <span class="step10 hide">
+      Interesting. Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.<br>
+      <button class="continue-2-btn">Continue</button>
+    </span>
+    <span class="question1 hide">
+      {{ companyName }}'s URL
+      <input class="company-url" type="text">
+    </span>
+    <span class="question2 hide">
+      Is there a video presentation? If not, please do one and send us!
+      <input class="company-video" type="text">
+    </span>
+    <span class="question3 hide">
+      Where you guys performed on the press?
+      <input class="company-press" type="text">
+    </span>
+    <span class="question4 hide">
+      What do you don’t want from us?
+      <input class="company-needs" type="text">
+    </span>
+    <span class="question5 hide">
+      How to think The Next Company could help you?
+      <input class="company-help" type="text">
+    </span>
+    <span class="question6 hide">
+      Do you understand we will ask for a piece of {{ companyName }} in exchange for the support we’ll give you? Please explain how do you feel about this.
+      <input class="company-feel" type="text">
+    </span>
+    <span class="question7 hide">
+      Can you give us 3 people (email/phone), which could talk about {{ companyName }}?
+      <input class="company-people-1" type="text">
+      <input class="company-people-2" type="text">
+      <input class="company-people-3" type="text">
+    </span>
+    <span class="question8 hide">
+      Is there something we did not ask you but you think it’s important?
+      <input class="company-important" type="text">
+    </span>
+    <span class="finalStepYes hide">
+      (I’m done) We are looking for disruptive ideas but there are lots of interesting incremental innovation companies that we are interested too. Let’s see what your company is. We’ll take a look at what you have said about {{ companyName }} – hope you were not way to optimistic of your own project – in that case we will not select your company – and come back to you in a while – don’t expect less then a few weeks return from us, there are lots of people talking to us – with the next steps. We’re expecting crazy stuff to do together and great business opportunities to explore! Talk to you soon!<br>
+      <button class="send-btn">Send</button>
+    </span>
+  </div>
+
 </template>
 <template name="stepCounter">
   <div>
