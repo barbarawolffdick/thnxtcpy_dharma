@@ -96,6 +96,13 @@
 </template>
 
 
+<template name="confirmation">
+  {{> header }}
+  <div class="container">
+    <p>We are very excited to have you with us. We'll take a look at what you have said about {{ companyName }} - hope you were not way to optimistic of your own project - in that case we will not select your company - and come back to you in a while - don't expect less then a few weeks return from us, there are lots of people talking to us - with the next steps. We're expecting crazy stuff to do together and great business opportunities to explore!</p>
+    <p>Talk to you soon!</p>
+  </div>
+</template>
 
 <!--Início do formulário-->
 
@@ -153,9 +160,9 @@
       Which area {{ companyName }} will disrupt?
       <select class="disruption-type">
         <option value="">select an option</option>
-        <option value="">Business model distuprion</option>
-        <option value="">Product disruption</option>
-        <option value="">Process disruption</option>
+        <option value="Business model disruption">Business model disruption</option>
+        <option value="Product disruption">Product disruption</option>
+        <option value="Process disruption">Process disruption</option>
       </select>
     </span>
     <span class="step5-no hide">
@@ -165,22 +172,13 @@
   </div>
 
   <div class="row">
-    <span class="step6 hide offset-by-two columns two-thirds column two-thirds column">
-      {{ companyName }}'s disruption is a 
-      <select class="disruption-type">
-        <option value="">select an option</option>
-        <option value="">Business model distuprion</option>
-        <option value="">Product disruption</option>
-        <option value="">Process disruption</option>
-      </select>
-    </span>
     <span class="step6-no hide">
       {{ companyName }}'s differentiation is about 
       <select class="differentiation-type">
         <option value="">select an option</option>
-        <option value="">incremental innovation</option>
-        <option value="">doing better something already being done</option>
-        <option value="">a local copy cat</option>
+        <option value="Incremental innovation">incremental innovation</option>
+        <option value="Doing better something already being done">doing better something already being done</option>
+        <option value="A local copy cat">a local copy cat</option>
       </select>
     </span>
   </div>
@@ -190,9 +188,9 @@
       and will create a
       <select class="new-type">
         <option value="">select an option</option>
-        <option value="">new business opportunity</option>
-        <option value="">new market</option>
-        <option value="">new segment</option>
+        <option value="New business opportunity<">new business opportunity</option>
+        <option value="New market">new market</option>
+        <option value="New segment">new segment</option>
       </select>
     </span>
     <span class="step7-no hide">
@@ -206,8 +204,8 @@
       in
       <select class="range-type">
         <option value="">select an option</option>
-        <option value="">our country</option>
-        <option value="">the world</option>
+        <option value="Our country">our country</option>
+        <option value="The world">the world</option>
       </select>
       .
     </span>
@@ -232,7 +230,7 @@
       4. What you don't want from us? 
       <input class="company-needs" type="text"><br>
       5. Can you give us three people (email/phone), which could talk about {{ companyName }}?
-      <input class="company-people-1" type="text"><br>
+      <input class="company-people" type="text"><br>
       6. Is there something we did not ask you but you think it’s important?
       <input class="company-important" type="text"><br>
       <button class="send-btn" type="button">Send</button>

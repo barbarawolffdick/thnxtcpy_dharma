@@ -6,8 +6,27 @@ var pressEnter = function(event) {
   return event.keyCode === 13 ? true : false;
 }
 
+var getFormInfo = function() {
+  var formData = {
+    "1.Name": $('.your-name').val(),
+    "2.Company name": $('.company-name').val(),
+    "3.It's disruptive?": $('.disruptive-question :selected').val(),
+    "4.Disruptive area": $('.disruption-type :selected').val(),
+    "5.Will create": $('.new-type :selected').val(),
+    "6.Where": $('.range-type :selected').val(),
+    "7.Company description": $('.company-description').val(),
+    "8.Company website": $('.company-url').val(),
+    "9.Company video": $('.company-video').val(),
+    "10.Press perform": $('.company-press').val(),
+    "11.Want from The Next Company": $('.company-needs').val(),
+    "12.People contact": $('.company-people').val(),
+    "13.Important things": $('.company-important').val()
+  }
+
+  return formData;
+}
+
 if(Meteor.isClient) {
-  Session.set('yourName', 'Your Name');
   Session.set('companyName', 'Your Company');
   Session.set('stepCounter', 1);
 
@@ -15,7 +34,6 @@ if(Meteor.isClient) {
     'keypress .your-name': function(event) {
       var text = $('.your-name').val();
       if(text !== '' && pressEnter(event)) {
-        Session.set('yourName', text);
         $('.step2').removeClass('hide');
         $('.company-name').focus();
       }
@@ -92,7 +110,18 @@ if(Meteor.isClient) {
       }
     },
     'click .send-btn': function(event) {
-
+      $.ajax({
+        url: "//formspree.io/douglasdetoni92@gmail.com", 
+        method: "POST",
+        data: getFormInfo(),
+        dataType: "json"
+      })
+      .done(function() {
+        Router.go('confirmation');
+      })
+      .fail(function() {
+        console.log("eerrou");
+      });
     }
   });
 
@@ -117,4 +146,5 @@ Router.route('/', function () {
 });
 
 Router.route('tell_your_history');
+Router.route('confirmation');
 
