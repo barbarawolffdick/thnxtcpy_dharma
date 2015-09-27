@@ -2,38 +2,30 @@ var incStepCounter = function() {
   Session.set('stepCounter', Session.get('stepCounter') + 1);
 }
 
+var pressEnter = function(event) {
+  return event.keyCode === 13 ? true : false;
+}
+
 if(Meteor.isClient) {
   Session.set('yourName', 'Your Name');
   Session.set('companyName', 'Your Company');
   Session.set('stepCounter', 1);
 
   Template.form.events({
-    'blur .your-name': function(event) {
-      var text = $('.your-name').text();
-      if(text == '') {
-        $('.your-name').text('Your Name');
-        Session.set('yourName', 'Your Name');
-      } else {
+    'keypress .your-name': function(event) {
+      var text = $('.your-name').val();
+      if(text !== '' && pressEnter(event)) {
         Session.set('yourName', text);
-        incStepCounter();
         $('.step2').removeClass('hide');
+        $('.company-name').focus();
       }
     },
-    'click .continue-btn': function(event) {
-      incStepCounter();
-      $('.step3').removeClass('hide');
-      $('.step1').addClass('hide');
-      $('.step2').addClass('hide');
-    },
-    'blur .company-name': function(event) {
-      var text = $('.company-name').text();
-      if(text == '') {
-        $('.company-name').text('Your Company');
-        Session.set('companyName', 'Your Company');
-      } else {
+    'keypress .company-name': function(event) {
+      var text = $('.company-name').val();
+      if(text !== '' && pressEnter(event)) {
         Session.set('companyName', text);
-        incStepCounter();
         $('.step4').removeClass('hide');
+        $('.company-type').focus();
       }
     },
     'change .company-type': function(event) {
@@ -48,33 +40,22 @@ if(Meteor.isClient) {
         $('.company-type-2more').removeClass('hide');
         $('.company-type').addClass('hide');
       } else {
-        incStepCounter();
         $('.company-type-startup').removeClass('hide');
         $('.company-type').addClass('hide');
+        $('.disruptive-question').focus();
       }
     },
     'change .disruptive-question': function(event){
       var value = $('.disruptive-question').val();
       if(value === 'yes') {
-        incStepCounter();
         $('.step5').removeClass('hide');
       } else {
-        incStepCounter();
         $('.step5-no').removeClass('hide');
-      }
-    },
-    'blur .area-disruption': function(event) {
-      var text = $('.area-disruption').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('areaDisruption', text);
-        $('.step6').removeClass('hide');
       }
     },
     'blur .company-area': function(event) {
       var text = $('.company-area').val();
       if(text !== '') {
-        incStepCounter();
         Session.set('companyArea', text);
         $('.step6-no').removeClass('hide');
       }
@@ -82,150 +63,22 @@ if(Meteor.isClient) {
     'blur .business-opportunity': function(event) {
       var text = $('.business-opportunity').val();
       if(text !== '') {
-        incStepCounter();
         Session.set('businessOpportunity', text);
         $('.step8').removeClass('hide');
       }
     },
     'change .disruption-type': function(event) {
-      incStepCounter();
       $('.step7').removeClass('hide');
     },
     'change .differentiation-type': function(event) {
-      incStepCounter();
       $('.step7-no').removeClass('hide');
     },
     'change .new-type': function(event) {
-      incStepCounter();
       $('.step8').removeClass('hide');
     },
     'change .range-type': function(event) {
-      incStepCounter();
       $('.step9').removeClass('hide');
-    },
-    'blur .company-description': function(event) {
-      var text = $('.company-description').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyDescription', text);
-        $('.step10').removeClass('hide');
-      }
-    },
-    'click .continue-2-btn': function(event) {
-      incStepCounter();
-      $('.step5').addClass('hide');
-      $('.step5-no').addClass('hide');
-      $('.step6').addClass('hide');
-      $('.step6-no').addClass('hide');
-      $('.step7').addClass('hide');
-      $('.step7-no').addClass('hide');
-      $('.step8').addClass('hide');
-      $('.step9').addClass('hide');
-      $('.step10').addClass('hide');
-      $('.question1').removeClass('hide');
-    },
-    'blur .company-url': function(event) {
-      var text = $('.company-url').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyUrl', text);
-        $('.question1').addClass('hide');
-        $('.question2').removeClass('hide');
-      }
-    },
-    'blur .company-video': function(event) {
-      var text = $('.company-video').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyVideo', text);
-        $('.question2').addClass('hide');
-        $('.question3').removeClass('hide');
-      }
-    },
-    'blur .company-press': function(event) {
-      var text = $('.company-press').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyPress', text);
-        $('.question3').addClass('hide');
-        $('.question4').removeClass('hide');
-      }
-    },
-    'blur .company-needs': function(event) {
-      var text = $('.company-needs').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyNeeds', text);
-        $('.question4').addClass('hide');
-        $('.question5').removeClass('hide');
-      }
-    },
-    'blur .company-help': function(event) {
-      var text = $('.company-help').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyHelp', text);
-        $('.question5').addClass('hide');
-        $('.question6').removeClass('hide');
-      }
-    },
-    'blur .company-feel': function(event) {
-      var text = $('.company-feel').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyFeel', text);
-        $('.question6').addClass('hide');
-        $('.question7').removeClass('hide');
-      }
-    },
-    'blur .company-people-1': function(event) {
-      var text1 = $('.company-people-1').val();
-      var text2 = $('.company-people-2').val();
-      var text3 = $('.company-people-3').val();
-      if(text1 !== '' && text2 !== '' && text3 !== '') {
-        incStepCounter();
-        Session.set('companyPeople1', text1);
-        Session.set('companyPeople2', text2);
-        Session.set('companyPeople3', text3);
-        $('.question7').addClass('hide');
-        $('.question8').removeClass('hide');
-      }
-    },
-    'blur .company-people-2': function(event) {
-      var text1 = $('.company-people-1').val();
-      var text2 = $('.company-people-2').val();
-      var text3 = $('.company-people-3').val();
-      if(text1 !== '' && text2 !== '' && text3 !== '') {
-        incStepCounter();
-        Session.set('companyPeople1', text1);
-        Session.set('companyPeople2', text2);
-        Session.set('companyPeople3', text3);
-        $('.question7').addClass('hide');
-        $('.question8').removeClass('hide');
-      }
-    },
-    'blur .company-people-3': function(event) {
-      var text1 = $('.company-people-1').val();
-      var text2 = $('.company-people-2').val();
-      var text3 = $('.company-people-3').val();
-      if(text1 !== '' && text2 !== '' && text3 !== '') {
-        incStepCounter();
-        Session.set('companyPeople1', text1);
-        Session.set('companyPeople2', text2);
-        Session.set('companyPeople3', text3);
-        $('.question7').addClass('hide');
-        $('.question8').removeClass('hide');
-      }
-    },
-    'blur .company-important': function(event) {
-      var text = $('.company-important').val();
-      if(text !== '') {
-        incStepCounter();
-        Session.set('companyImportant', text);
-        $('.question8').addClass('hide');
-        $('.finalStepYes').removeClass('hide');
-      }
-    },
+    }
   });
 
   Template.form.helpers({

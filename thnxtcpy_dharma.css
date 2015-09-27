@@ -179,13 +179,9 @@ span{
     font-size: 3rem;
 }
 
-
-
-
-
 /*Form styles*/
-
 .your-name{
+    border: none;
     border-bottom: 4px dotted #ddd;
     color: #ddd;
 }
@@ -195,6 +191,7 @@ span{
 }
 
 .company-name{
+    border: none;
     border-bottom: 4px dotted #ddd;
     color: #ddd;
 }
