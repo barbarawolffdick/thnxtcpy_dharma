@@ -175,7 +175,24 @@ footer img{
     width: 100%;
 }
 
+span{
+    font-size: 3rem;
+}
 
+
+
+
+
+/*Form styles*/
+
+.your-name{
+    border-bottom: 4px dotted #ddd;
+    color: #ddd;
+}
+
+.your-name:focus{
+    outline: none;
+}
 
 .hide{
     display: none;
