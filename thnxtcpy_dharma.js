@@ -49,6 +49,7 @@ if(Meteor.isClient) {
       var value = $('.disruptive-question').val();
       if(value === 'yes') {
         $('.step5').removeClass('hide');
+        $('.disruption-type').focus();
       } else {
         $('.step5-no').removeClass('hide');
       }
@@ -69,15 +70,29 @@ if(Meteor.isClient) {
     },
     'change .disruption-type': function(event) {
       $('.step7').removeClass('hide');
+      $('.new-type').focus();
     },
     'change .differentiation-type': function(event) {
       $('.step7-no').removeClass('hide');
     },
     'change .new-type': function(event) {
       $('.step8').removeClass('hide');
+      $('.range-type').focus();
     },
     'change .range-type': function(event) {
       $('.step9').removeClass('hide');
+      $('.company-description').focus();
+    },
+    'keypress .company-description': function(event) {
+      var text = $('.company-description').val();
+      if(text !== '' && pressEnter(event)) {
+        Session.set('companyDescription', text);
+        $('.step10').removeClass('hide');
+        $('.company-url').focus();
+      }
+    },
+    'click .send-btn': function(event) {
+
     }
   });
 
