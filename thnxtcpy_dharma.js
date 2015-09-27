@@ -57,13 +57,9 @@ if(Meteor.isClient) {
       var value = $('.disruptive-question').val();
       if(value === 'yes') {
         incStepCounter();
-        $('.step3').addClass('hide');
-        $('.step4').addClass('hide');
         $('.step5').removeClass('hide');
       } else {
         incStepCounter();
-        $('.step3').addClass('hide');
-        $('.step4').addClass('hide');
         $('.step5-no').removeClass('hide');
       }
     },

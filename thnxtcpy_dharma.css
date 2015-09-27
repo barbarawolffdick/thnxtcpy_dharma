@@ -194,6 +194,15 @@ span{
     outline: none;
 }
 
+.company-name{
+    border-bottom: 4px dotted #ddd;
+    color: #ddd;
+}
+
+.company-name:focus{
+    outline: none;
+}
+
 .hide{
     display: none;
 }

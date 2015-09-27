@@ -106,27 +106,23 @@
       <span class="your-name" contenteditable="true">
         Type it here
       </span>
+      , 
     </span>
   </div>
 
 
   <div class="row">
     <span class="step2 hide offset-by-two columns two-thirds column two-thirds column">
-      , welcome to The Next Company! Together we will change the future! Are you ready?<br>
-      <button class="continue-btn">Continue</button>
-    </span>
-  </div>
-
-  <div class="row">
-    <span class="step3 hide offset-by-two columns two-thirds column two-thirds column">
+      welcome to The Next Company! Together we will change the future! What's your company name? 
       <span class="company-name" contenteditable="true">
-        {{ yourName }} is
+        Type it here
       </span>
     </span>
   </div>
 
   <div class="row">
     <span class="step4 hide offset-by-two columns two-thirds column two-thirds column">
+      What do you have in hands? 
       <select class="company-type">
         <option value="">select an option</option>
         <option value="idea">Idea</option>
@@ -136,16 +132,16 @@
       </select>
 
       <span class="company-type-idea hide">
-        just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.
+        {{ companyName }} is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.
       </span>
       <span class="company-type-keynote hide">
-        a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.
+        {{ companyName }} is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.
       </span>
       <span class="company-type-2more hide">
-        a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.
+        {{ companyName }} is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.
       </span>
       <span class="company-type-startup hide">
-        a startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?
+        {{ companyName }} is a startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?
         <select class="disruptive-question">
           <option value="">select an option</option>
           <option value="yes">Yes</option>
@@ -155,11 +151,16 @@
     </span>
   </div>
 
-
   <div class="row">
     <span class="step5 hide offset-by-two columns two-thirds column two-thirds column">
-      This is great! Which area {{ companyName }} will disrupt?
-      <input class="area-disruption" type="text">.
+      This is great! <br>
+      Which area {{ companyName }} will disrupt?
+      <select class="disruption-type">
+        <option value="">select an option</option>
+        <option value="">Business model distuprion</option>
+        <option value="">Product disruption</option>
+        <option value="">Process disruption</option>
+      </select>
     </span>
     <span class="step5-no hide">
       This is ok. Which area is {{ companyName }}?
@@ -172,9 +173,9 @@
       {{ companyName }}'s disruption is a 
       <select class="disruption-type">
         <option value="">select an option</option>
-        <option value="">business model distuprion</option>
-        <option value="">product disruption</option>
-        <option value="">process disruption</option>
+        <option value="">Business model distuprion</option>
+        <option value="">Product disruption</option>
+        <option value="">Process disruption</option>
       </select>
     </span>
     <span class="step6-no hide">
@@ -212,65 +213,33 @@
         <option value="">our country</option>
         <option value="">the world</option>
       </select>
+      .
     </span>
   </div>
 
   <div class="row">
     <span class="step9 hide offset-by-two columns two-thirds column two-thirds column">
-      If you had to describe {{ companyName }} in 140 characters, one tweet, {{ companyName }}  
-      <input class="company-description" type="text">.
-    </span>
-  </div>
-
-  <div class="row">
-
-    <span class="step10 hide">
-      Interesting. Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.<br>
-      <button class="continue-2-btn">Continue</button>
-    </span>
-    <span class="question1 hide">
-      {{ companyName }}'s URL
-      <input class="company-url" type="text">
-    </span>
-    <span class="question2 hide">
-      Is there a video presentation? If not, please do one and send us!
-      <input class="company-video" type="text">
-    </span>
-    <span class="question3 hide">
-      Where you guys performed on the press?
-      <input class="company-press" type="text">
-    </span>
-    <span class="question4 hide">
-      What do you don’t want from us?
-      <input class="company-needs" type="text">
-    </span>
-    <span class="question5 hide">
-      How to think The Next Company could help you?
-      <input class="company-help" type="text">
-    </span>
-    <span class="question6 hide">
-      Do you understand we will ask for a piece of {{ companyName }} in exchange for the support we’ll give you? Please explain how do you feel about this.
-      <input class="company-feel" type="text">
-    </span>
-    <span class="question7 hide">
-      Can you give us 3 people (email/phone), which could talk about {{ companyName }}?
-      <input class="company-people-1" type="text">
-      <input class="company-people-2" type="text">
-      <input class="company-people-3" type="text">
-    </span>
-    <span class="question8 hide">
-      Is there something we did not ask you but you think it’s important?
-      <input class="company-important" type="text">
-    </span>
-    <span class="finalStepYes hide">
-      (I’m done) We are looking for disruptive ideas but there are lots of interesting incremental innovation companies that we are interested too. Let’s see what your company is. We’ll take a look at what you have said about {{ companyName }} – hope you were not way to optimistic of your own project – in that case we will not select your company – and come back to you in a while – don’t expect less then a few weeks return from us, there are lots of people talking to us – with the next steps. We’re expecting crazy stuff to do together and great business opportunities to explore! Talk to you soon!<br>
-      <button class="send-btn">Send</button>
+      If you had to describe {{ companyName }} in 140 characters, one tweet:<br>  
+      <input class="company-description" type="text"><br>
+      Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.<br>
+      1. Do you have a website? 
+      <input class="company-url" type="text"><br>
+      2. Is there a video presentation? 
+      <input class="company-video" type="text"><br>
+      3. Where you performed on the press? 
+      <input class="company-press" type="text"><br>
+      4. What you don't want from us? 
+      <input class="company-needs" type="text"><br>
+      5. Can you give us three people (email/phone), which could talk about {{ companyName }}?
+      <input class="company-people-1" type="text"><br>
+      6. Is there something we did not ask you but you think it’s important?
+      <input class="company-important" type="text"><br>
     </span>
   </div>
 
 </template>
 <template name="stepCounter">
   <div>
-    {{ counter }} of 20 steps. 
+    {{ counter }} of 9 steps. 
   </div>
 </template>
