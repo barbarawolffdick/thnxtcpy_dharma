@@ -190,6 +190,7 @@ footer img{
   margin-bottom: 0;
 }
 
+
 #question4{
     width: 41%;
     float: left;
@@ -237,6 +238,11 @@ input:-ms-input-placeholder {
 
 .green{
   color: #B7D43A;
+}
+
+.disruption-type{
+  float: right;
+  width: 38%;
 }
 
 /*color: #B7D43A; (green)*/

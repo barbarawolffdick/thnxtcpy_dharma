@@ -137,54 +137,59 @@
         <p><span class="green">{{ companyName }}</span> is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
       </div>
       <div class="company-type-startup hide">
-        <p><span class="green">{{ companyName }}</span> is a startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?</p>
+        <p><span class="green">{{ companyName }}</span> is a startup and this is exactly what we are looking for. Would you consider <span class="green">{{ companyName }}</span> a disruptive startup?
         <select class="disruptive-question">
           <option value="">select an option</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="row">
     <span class="step5 hide">
-      <p>This is great! Which area {{ companyName }} will disrupt?</p>
+      <p>This is great! Which area <span class="green">{{ companyName }}</span> will disrupt?
       <select class="disruption-type">
         <option value="">select an option</option>
         <option value="Business model disruption">Business model disruption</option>
         <option value="Product disruption">Product disruption</option>
         <option value="Process disruption">Process disruption</option>
       </select>
+      </p>
     </span>
     <span class="step5-no hide">
-      <p>This is ok. Which area is {{ companyName }}?</p>
+      <p>This is ok. Which area is <span class="green">{{ companyName }}</span>?</p>
       <input class="company-area" type="text">.
     </span>
   </div>
 
   <div class="row">
     <span class="step6-no hide">
-      <p>{{ companyName }}'s differentiation is about </p>
+      <p><span class="green">{{ companyName }}'s</span> differentiation is about
       <select class="differentiation-type">
         <option value="">select an option</option>
         <option value="Incremental innovation">incremental innovation</option>
         <option value="Doing better something already being done">doing better something already being done</option>
         <option value="A local copy cat">a local copy cat</option>
       </select>
+      </p>
     </span>
   </div>
 
   <div class="row">
     <span class="step7 hide">
-      <p>and will create a</p>
+      <p>and will create a
       <select class="new-type">
         <option value="">select an option</option>
         <option value="New business opportunity<">new business opportunity</option>
         <option value="New market">new market</option>
         <option value="New segment">new segment</option>
       </select>
+      </p>
     </span>
+
     <span class="step7-no hide">
       <p>and creates a new business opportunity because of</p>
       <input class="business-opportunity" type="text">.
@@ -193,26 +198,27 @@
 
   <div class="row">
     <span class="step8 hide">
-      <p>in</p>
+      <p>in
       <select class="range-type">
         <option value="">select an option</option>
         <option value="Our country">our country</option>
         <option value="The world">the world</option>
       </select>
       .
+      </p>
     </span>
   </div>
 
   <div class="row">
     <span class="step9 hide">
-      <p>If you had to describe {{ companyName }} in 140 characters, one tweet:</p>
-      <input class="company-description" type="text">
+      <p>If you had to describe <span class="green">{{ companyName }}</span> in 140 characters, one tweet:</p>
+      <textarea class="company-description u-full-width" type="text"></textarea>
     </span>
   </div>
 
   <div class="row">
     <span class="step10 hide">
-      <p>Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.</p>
+      <p>Now we have a few questions for you so we can understand more of <span class="green">{{ companyName }}</span> and also how we can help you.</p>
       <label>1. Do you have a website? </label>
       <input class="company-url" type="text">
 
@@ -225,7 +231,7 @@
       <label>4. What you don't want from us?</label> 
       <input class="company-needs" type="text">
 
-      <label>5. Can you give us three people (email/phone), which could talk about {{ companyName }}?</label>
+      <label>5. Can you give us three people (email/phone), which could talk about <span class="green">{{ companyName }}</span>?</label>
       <input class="company-people" type="text">
 
       <label>6. Is there something we did not ask you but you think it’s important?</label>
