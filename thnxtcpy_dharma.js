@@ -66,20 +66,21 @@ if(Meteor.isClient) {
         $('.disruption-type').focus();
       } else {
         $('.step5-no').removeClass('hide');
+        $('.company-area').focus();
       }
     },
-    'blur .company-area': function(event) {
+    'keypress .company-area': function(event) {
       var text = $('.company-area').val();
-      if(text !== '') {
-        Session.set('companyArea', text);
+      if(text !== '' && pressEnter(event)) {
         $('.step6-no').removeClass('hide');
+        $('.differentiation-type').focus();
       }
     },
-    'blur .business-opportunity': function(event) {
+    'keypress .business-opportunity': function(event) {
       var text = $('.business-opportunity').val();
-      if(text !== '') {
-        Session.set('businessOpportunity', text);
+      if(text !== '' && pressEnter(event)) {
         $('.step8').removeClass('hide');
+        $('.range-type').focus();
       }
     },
     'change .disruption-type': function(event) {
@@ -88,6 +89,7 @@ if(Meteor.isClient) {
     },
     'change .differentiation-type': function(event) {
       $('.step7-no').removeClass('hide');
+      $('.business-opportunity').focus();
     },
     'change .new-type': function(event) {
       $('.step8').removeClass('hide');
