@@ -175,21 +175,16 @@ footer img{
     width: 100%;
 }
 
-span{
-    font-size: 3rem;
-}
-
 /*Form styles*/
 
-.tell-your-story-form{
+
+.tell-your-story-form p{
     font-weight: 800;
     color: #454850;
-}
-
-.step1, .step2{
     font-size: 2.6rem;
     line-height: 4.9rem;
 }
+
 
 .step1 p, .step2 p{
   margin-bottom: 0;

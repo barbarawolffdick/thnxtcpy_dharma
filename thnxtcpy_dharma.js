@@ -50,16 +50,12 @@ if(Meteor.isClient) {
       var value = $('.company-type').val();
       if(value === 'idea') {
         $('.company-type-idea').removeClass('hide');
-        $('.company-type').addClass('hide');
       } else if(value === 'keynote') {
         $('.company-type-keynote').removeClass('hide');
-        $('.company-type').addClass('hide');
       } else if(value === '2more') {
         $('.company-type-2more').removeClass('hide');
-        $('.company-type').addClass('hide');
       } else {
         $('.company-type-startup').removeClass('hide');
-        $('.company-type').addClass('hide');
         $('.disruptive-question').focus();
       }
     },
