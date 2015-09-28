@@ -180,10 +180,32 @@ span{
 }
 
 /*Form styles*/
+
+.tell-your-story-form{
+    font-weight: 800;
+    color: #454850;
+}
+
+.step1{
+    font-size: 2.6rem;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(198, 49, 135, 1);
+}
+input::-moz-placeholder {
+    color: rgba(198, 49, 135, 1);
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    color: rgba(198, 49, 135, 1);
+}
+input:-ms-input-placeholder { 
+    color: rgba(198, 49, 135, 1);
+}
+
 .your-name{
     border: none;
-    border-bottom: 4px dotted #ddd;
-    color: #ddd;
+    color: #C63187;
 }
 
 .your-name:focus{
@@ -192,8 +214,7 @@ span{
 
 .company-name{
     border: none;
-    border-bottom: 4px dotted #ddd;
-    color: #ddd;
+    color: #C63187;
 }
 
 .company-name:focus{
@@ -203,3 +224,9 @@ span{
 .hide{
     display: none;
 }
+
+/*color: #B7D43A; (green)*/
+/*color: #C63187; (pink)*/
+
+
+

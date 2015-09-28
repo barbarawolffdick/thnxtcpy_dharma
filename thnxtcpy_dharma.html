@@ -89,8 +89,8 @@
 
 <template name="tellYourHistory">
   {{> header }}
-  <div class="container">
-    {{> stepCounter }}      
+  <div class="container tell-your-story-form">
+<!--     {{> stepCounter }}   -->    
     {{> form }}
   </div>
 </template>
@@ -109,23 +109,22 @@
 <template name="form">
   <div class="row">
     <span class="step1 offset-by-two columns two-thirds column">
-      So you are interested in talking to us, that's great! What is your name? 
+      <p>So you are interested in talking to us, that's great! What is your name?</p>
       <input class="your-name" placeholder='Type it here' autofocus>
-      , 
     </span>
   </div>
 
 
   <div class="row">
     <span class="step2 hide offset-by-two columns two-thirds column two-thirds column">
-      welcome to The Next Company! Together we will change the future! What's your company name? 
+      <p>, welcome to The Next Company! Together we will change the future! What's your company name? </p>
       <input class="company-name" placeholder='Type it here'>
     </span>
   </div>
 
   <div class="row">
     <span class="step4 hide offset-by-two columns two-thirds column two-thirds column">
-      What do you have in hands? 
+      <p>What do you have in hands?</p>
       <select class="company-type">
         <option value="">select an option</option>
         <option value="idea">Idea</option>
@@ -135,16 +134,16 @@
       </select>
 
       <span class="company-type-idea hide">
-        {{ companyName }} is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.
+        <p>{{ companyName }} is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.</p>
       </span>
       <span class="company-type-keynote hide">
-        {{ companyName }} is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.
+        <p>{{ companyName }} is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.</p>
       </span>
       <span class="company-type-2more hide">
-        {{ companyName }} is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.
+        <p>{{ companyName }} is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
       </span>
       <span class="company-type-startup hide">
-        {{ companyName }} is a startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?
+        <p>{{ companyName }} is a startup and this is exactly what we are looking for. Would you consider {{ companyName }} a disruptive startup?</p>
         <select class="disruptive-question">
           <option value="">select an option</option>
           <option value="yes">Yes</option>
@@ -156,8 +155,7 @@
 
   <div class="row">
     <span class="step5 hide offset-by-two columns two-thirds column two-thirds column">
-      This is great! <br>
-      Which area {{ companyName }} will disrupt?
+      <p>This is great! Which area {{ companyName }} will disrupt?</p>
       <select class="disruption-type">
         <option value="">select an option</option>
         <option value="Business model disruption">Business model disruption</option>
@@ -166,14 +164,14 @@
       </select>
     </span>
     <span class="step5-no hide">
-      This is ok. Which area is {{ companyName }}?
+      <p>This is ok. Which area is {{ companyName }}?</p>
       <input class="company-area" type="text">.
     </span>
   </div>
 
   <div class="row">
     <span class="step6-no hide">
-      {{ companyName }}'s differentiation is about 
+      <p>{{ companyName }}'s differentiation is about </p>
       <select class="differentiation-type">
         <option value="">select an option</option>
         <option value="Incremental innovation">incremental innovation</option>
@@ -185,7 +183,7 @@
 
   <div class="row">
     <span class="step7 hide offset-by-two columns two-thirds column two-thirds column">
-      and will create a
+      <p>and will create a</p>
       <select class="new-type">
         <option value="">select an option</option>
         <option value="New business opportunity<">new business opportunity</option>
@@ -194,14 +192,14 @@
       </select>
     </span>
     <span class="step7-no hide">
-      and creates a new business opportunity because of
+      <p>and creates a new business opportunity because of</p>
       <input class="business-opportunity" type="text">.
     </span>
   </div>
 
   <div class="row">
     <span class="step8 hide offset-by-two columns two-thirds column two-thirds column">
-      in
+      <p>in</p>
       <select class="range-type">
         <option value="">select an option</option>
         <option value="Our country">our country</option>
@@ -213,26 +211,32 @@
 
   <div class="row">
     <span class="step9 hide offset-by-two columns two-thirds column two-thirds column">
-      If you had to describe {{ companyName }} in 140 characters, one tweet:<br>  
-      <input class="company-description" type="text"><br>
+      <p>If you had to describe {{ companyName }} in 140 characters, one tweet:</p>
+      <input class="company-description" type="text">
     </span>
   </div>
 
   <div class="row">
     <span class="step10 hide offset-by-two columns two-thirds column two-thirds column">
-      Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.<br>
-      1. Do you have a website? 
-      <input class="company-url" type="text"><br>
-      2. Is there a video presentation? 
-      <input class="company-video" type="text"><br>
-      3. Where you performed on the press? 
-      <input class="company-press" type="text"><br>
-      4. What you don't want from us? 
-      <input class="company-needs" type="text"><br>
-      5. Can you give us three people (email/phone), which could talk about {{ companyName }}?
-      <input class="company-people" type="text"><br>
-      6. Is there something we did not ask you but you think it’s important?
-      <input class="company-important" type="text"><br>
+      <p>Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.</p>
+      <label>1. Do you have a website? </label>
+      <input class="company-url" type="text">
+
+      <label>2. Is there a video presentation?</label>
+      <input class="company-video" type="text">
+
+      <label>3. Where you performed on the press?</label> 
+      <input class="company-press" type="text">
+
+      <label>4. What you don't want from us?</label> 
+      <input class="company-needs" type="text">
+
+      <label>5. Can you give us three people (email/phone), which could talk about {{ companyName }}?</label>
+      <input class="company-people" type="text">
+
+      <label>6. Is there something we did not ask you but you think it’s important?</label>
+      <input class="company-important" type="text">
+      
       <button class="send-btn" type="button">Send</button>
     </span>
   </div>
