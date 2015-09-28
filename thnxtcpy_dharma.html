@@ -90,8 +90,10 @@
 <template name="tellYourHistory">
   {{> header }}
   <div class="container tell-your-story-form">
+    <div class="offset-by-two columns two-thirds column">
 <!--     {{> stepCounter }}   -->    
-    {{> form }}
+      {{> form }}
+    </div>
   </div>
 </template>
 
@@ -107,24 +109,14 @@
 <!--Início do formulário-->
 
 <template name="form">
-  <div class="row">
-    <span class="step1 offset-by-two columns two-thirds column">
-      <p>So you are interested in talking to us, that's great! What is your name?</p>
-      <input class="your-name" placeholder='Type it here' autofocus>
-    </span>
-  </div>
 
-
-  <div class="row">
-    <span class="step2 hide offset-by-two columns two-thirds column two-thirds column">
-      <p>, welcome to The Next Company! Together we will change the future! What's your company name? </p>
-      <input class="company-name" placeholder='Type it here'>
-    </span>
+  <div class="step1">
+    <p>So you are interested in talking to us, that's great! What is your name? <input class="your-name" placeholder='Type it here' autofocus> <span class="step2 hide "> welcome to The Next Company! Together we will change the future! What's your company name? <input class="company-name" placeholder='Type it here'></span></p>
   </div>
 
   <div class="row">
-    <span class="step4 hide offset-by-two columns two-thirds column two-thirds column">
-      <p>What do you have in hands?</p>
+    <div class="step4 hide">
+      <p id="question4">What do you have in hands?</p>
       <select class="company-type">
         <option value="">select an option</option>
         <option value="idea">Idea</option>
@@ -132,10 +124,11 @@
         <option value="2more">2 or more years old company</option>
         <option value="startup">Startup</option>
       </select>
+      <hr>
 
-      <span class="company-type-idea hide">
-        <p>{{ companyName }} is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.</p>
-      </span>
+      <div class="company-type-idea hide">
+        <p><span  class="green">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.</p>
+      </div>
       <span class="company-type-keynote hide">
         <p>{{ companyName }} is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.</p>
       </span>
@@ -150,11 +143,11 @@
           <option value="no">No</option>
         </select>
       </span>
-    </span>
+    </div>
   </div>
 
   <div class="row">
-    <span class="step5 hide offset-by-two columns two-thirds column two-thirds column">
+    <span class="step5 hide">
       <p>This is great! Which area {{ companyName }} will disrupt?</p>
       <select class="disruption-type">
         <option value="">select an option</option>
@@ -182,7 +175,7 @@
   </div>
 
   <div class="row">
-    <span class="step7 hide offset-by-two columns two-thirds column two-thirds column">
+    <span class="step7 hide">
       <p>and will create a</p>
       <select class="new-type">
         <option value="">select an option</option>
@@ -198,7 +191,7 @@
   </div>
 
   <div class="row">
-    <span class="step8 hide offset-by-two columns two-thirds column two-thirds column">
+    <span class="step8 hide">
       <p>in</p>
       <select class="range-type">
         <option value="">select an option</option>
@@ -210,14 +203,14 @@
   </div>
 
   <div class="row">
-    <span class="step9 hide offset-by-two columns two-thirds column two-thirds column">
+    <span class="step9 hide">
       <p>If you had to describe {{ companyName }} in 140 characters, one tweet:</p>
       <input class="company-description" type="text">
     </span>
   </div>
 
   <div class="row">
-    <span class="step10 hide offset-by-two columns two-thirds column two-thirds column">
+    <span class="step10 hide">
       <p>Now we have a few questions for you so we can understand more of {{ companyName }} and also how we can help you.</p>
       <label>1. Do you have a website? </label>
       <input class="company-url" type="text">
@@ -236,7 +229,7 @@
 
       <label>6. Is there something we did not ask you but you think it’s important?</label>
       <input class="company-important" type="text">
-      
+
       <button class="send-btn" type="button">Send</button>
     </span>
   </div>

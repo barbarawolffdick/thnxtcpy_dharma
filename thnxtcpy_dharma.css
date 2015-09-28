@@ -7,7 +7,7 @@ header{
 }
 
 header .item{
-	color: #666;
+    color: #666;
 }
 
 header a{
@@ -19,11 +19,11 @@ header a{
 }
 
 header a:last-child{
-	margin-right: 0;
+    margin-right: 0;
 }
 
 header a:hover{
-	color: #aa3a10;
+    color: #aa3a10;
 }
 
 header img{ 
@@ -162,13 +162,13 @@ a.call-to-action:hover{
 }
 
 footer{
-	background-color: #454850;
+    background-color: #454850;
 }
 
 footer p{
-	margin-bottom: 0;
-	color: #fff;
-	padding-bottom: 1rem;
+    margin-bottom: 0;
+    color: #fff;
+    padding-bottom: 1rem;
 }
 
 footer img{
@@ -186,7 +186,18 @@ span{
     color: #454850;
 }
 
-.step1{
+.step1, .step2{
+    font-size: 2.6rem;
+    line-height: 4.9rem;
+}
+
+.step1 p, .step2 p{
+  margin-bottom: 0;
+}
+
+#question4{
+    width: 41%;
+    float: left;
     font-size: 2.6rem;
 }
 
@@ -205,7 +216,8 @@ input:-ms-input-placeholder {
 
 .your-name{
     border: none;
-    color: #C63187;
+    color: #B7D43A;
+    margin-bottom: 0;
 }
 
 .your-name:focus{
@@ -214,7 +226,10 @@ input:-ms-input-placeholder {
 
 .company-name{
     border: none;
-    color: #C63187;
+    color: #B7D43A;
+    width: 26%;
+    float: right;
+    margin-top: 7px;
 }
 
 .company-name:focus{
@@ -223,6 +238,10 @@ input:-ms-input-placeholder {
 
 .hide{
     display: none;
+}
+
+.green{
+  color: #B7D43A;
 }
 
 /*color: #B7D43A; (green)*/

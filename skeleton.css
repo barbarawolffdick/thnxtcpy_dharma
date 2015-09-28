@@ -245,7 +245,10 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #C63187;
+  font-size: 2.6rem;
+  font-weight: 400; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
