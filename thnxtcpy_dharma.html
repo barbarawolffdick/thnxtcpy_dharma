@@ -77,7 +77,7 @@
         <div class="card" id="fourth">
           <h3>4</h3>
           <img src="/04.png" alt="envelop">
-          <p>Support the <strong>startup phase</strong> of the companies</p>
+          <p>Support the <strong>start up phase</strong> of the companies</p>
         </div>
 
       </div>
@@ -110,19 +110,24 @@
 
 <template name="form">
 
-  <div class="step1">
-    <p>So you are interested in talking to us, that's great! What is your name? <input class="your-name" placeholder='Type it here' autofocus> <span class="step2 hide "> welcome to The Next Company! Together we will change the future! What's your company name? <input class="company-name" placeholder='Type it here'></span></p>
+  <div class="row">
+    <p class="step1"> So you are interested in talking to us, that's great! What is your name? 
+      <input class="your-name" placeholder='Type it here' autofocus> 
+      <span class="step2 hide"> welcome to The Next Company! Together we will change the future! What's your company name? 
+        <input class="company-name" placeholder='Type it here'>
+      </span>
+    </p>
   </div>
 
   <div class="row">
     <div class="step4 hide">
       <p id="question4">What do you have in hands?</p>
       <select class="company-type">
-        <option value="">select an option</option>
+        <option value=""> Select</option>
         <option value="idea">Idea</option>
         <option value="keynote">Keynote Presentantion</option>
-        <option value="2more">2 or more years old company</option>
-        <option value="startup">Startup</option>
+        <option value="2more">2+ years old company</option>
+        <option value="startup">Start Up</option>
       </select>
 
       <hr>
@@ -139,7 +144,7 @@
       <div class="company-type-startup hide">
         <p><span class="green">{{ companyName }}</span> is a startup and this is exactly what we are looking for. Would you consider <span class="green">{{ companyName }}</span> a disruptive startup?
         <select class="disruptive-question">
-          <option value="">select an option</option>
+          <option value="">Select</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
@@ -149,16 +154,18 @@
   </div>
 
   <div class="row">
-    <span class="step5 hide">
-      <p>This is great! Which area <span class="green">{{ companyName }}</span> will disrupt?
+    <div class="step5 hide">
+      <p>This is great!</p>
+      <p>Which area <span class="green">{{ companyName }}</span> will disrupt?
       <select class="disruption-type">
-        <option value="">select an option</option>
+        <option value=""> Select </option>
         <option value="Business model disruption">Business model disruption</option>
         <option value="Product disruption">Product disruption</option>
         <option value="Process disruption">Process disruption</option>
       </select>
       </p>
-    </span>
+    </div>
+    
     <span class="step5-no hide">
       <p>This is ok. Which area is <span class="green">{{ companyName }}</span>?</p>
       <input class="company-area" type="text">.
@@ -171,7 +178,7 @@
       <select class="differentiation-type">
         <option value="">select an option</option>
         <option value="Incremental innovation">incremental innovation</option>
-        <option value="Doing better something already being done">doing better something already being done</option>
+        <option value="Doing something better">doing better something already being done</option>
         <option value="A local copy cat">a local copy cat</option>
       </select>
       </p>
@@ -194,27 +201,30 @@
       <p>and creates a new business opportunity because of</p>
       <input class="business-opportunity" type="text">.
     </span>
-  </div>
 
-  <div class="row">
     <span class="step8 hide">
       <p>in
       <select class="range-type">
-        <option value="">select an option</option>
+        <option value="">select</option>
         <option value="Our country">our country</option>
         <option value="The world">the world</option>
       </select>
       .
       </p>
     </span>
+
   </div>
+
 
   <div class="row">
     <span class="step9 hide">
+      <hr>
       <p>If you had to describe <span class="green">{{ companyName }}</span> in 140 characters, one tweet:</p>
-      <textarea class="company-description u-full-width" type="text"></textarea>
+      <textarea class="company-description u-full-width" type="text" maxlength="140"></textarea>
+      <hr>
     </span>
   </div>
+
 
   <div class="row">
     <span class="step10 hide">
