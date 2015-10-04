@@ -266,16 +266,54 @@ select{
     margin-left: 7px;
 }
 
+.step5 em{
+  color: #C63187;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
 .step9 textarea{
   min-height: 10rem;
+}
+
+.step10 input{
+  width: 100%;
+  font-size: 1.8rem;
+  color: #999;
+}
+
+.step10 label{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.step10 textarea{
+  width: 100%;
+  min-height: 14rem;
+  font-size: 1.8rem;
+  color: #999;
+}
+
+.question{
+  margin-bottom: 2rem;
 }
 
 .hide{
     display: none;
 }
 
+.send-message{
+  background-color: #F7F5F5;
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 11rem;
+  line-height: 5rem;
+}
+
 .green{
-  color: #B7D43A;
+  color: #C63187; 
 }
 
 .disruption-type{

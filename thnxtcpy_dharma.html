@@ -101,8 +101,12 @@
 <template name="confirmation">
   {{> header }}
   <div class="container">
-    <p>We are very excited to have you with us. We'll take a look at what you have said about {{ companyName }} - hope you were not way to optimistic of your own project - in that case we will not select your company - and come back to you in a while - don't expect less then a few weeks return from us, there are lots of people talking to us - with the next steps. We're expecting crazy stuff to do together and great business opportunities to explore!</p>
-    <p>Talk to you soon!</p>
+    <div class="row send-message">
+      <div class="offset-by-one columns six column">
+        <p>We are very excited to have you with us. We'll take a look at what you have said about {{ companyName }} - hope you were not way to optimistic of your own project - in that case we will not select your company - and come back to you in a while - don't expect less then a few weeks return from us, there are lots of people talking to us - with the next steps. We're expecting crazy stuff to do together and great business opportunities to explore!</p>
+        <p>Talk to you soon!</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -155,7 +159,7 @@
 
   <div class="row">
     <div class="step5 hide">
-      <p>This is great!</p>
+      <em>This is great!</em>
       <p>Which area <span class="green">{{ companyName }}</span> will disrupt?
       <select class="disruption-type">
         <option value=""> Select </option>
@@ -226,29 +230,88 @@
   </div>
 
 
-  <div class="row">
-    <span class="step10 hide">
+  <div class="regular-form">
+    <div class="step10 hide">
       <p>Now we have a few questions for you so we can understand more of <span class="green">{{ companyName }}</span> and also how we can help you.</p>
-      <label>1. Do you have a website? </label>
-      <input class="company-url" type="text">
 
-      <label>2. Is there a video presentation?</label>
-      <input class="company-video" type="text">
 
-      <label>3. Where you performed on the press?</label> 
-      <input class="company-press" type="text">
+      <div class="row question">
+        <div class="seven columns">
+          <label>1. Do you have a website? </label>
+        </div>
+        <div class="five columns">
+          <input class="company-url" type="text">
+        </div>
+      </div>
 
-      <label>4. What you don't want from us?</label> 
-      <input class="company-needs" type="text">
+      <div class="row question">
+        <div class="seven columns">
+          <label>2. Is there a video presentation?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-video" type="text">
+        </div>
+      </div>
 
-      <label>5. Can you give us three people (email/phone), which could talk about <span class="green">{{ companyName }}</span>?</label>
-      <input class="company-people" type="text">
+      <div class="row question">
+        <div class="seven columns">      
+          <label>3. Where you performed on the press?</label> 
+        </div>
+        <div class="five columns">      
+          <input class="company-press" type="text">
+          <input class="company-press" type="text">
+          <input class="company-press" type="text">      
+        </div>
+      </div>
 
-      <label>6. Is there something we did not ask you but you think it’s important?</label>
-      <input class="company-important" type="text">
 
-      <button class="send-btn" type="button">Send</button>
-    </span>
+      <div class="row question">
+        <div class="seven columns">  
+          <label>4. How do you think the next company could help you?</label> 
+        </div>
+        <div class="five columns">
+          <input class="company-needs" type="text">
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>5. Can you give us three people (email/phone), which could talk about <span class="green">{{ companyName }}</span>?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-people" type="text">
+          <input class="company-people" type="text">
+          <input class="company-people" type="text">
+        </div>
+      </div>
+
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>6. What you don’t want from us?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-important" type="text">
+        </div>
+      </div>
+
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>7. Is there something we did not ask you but you think it’s important?</label>
+        </div>
+        <div class="five columns">      
+          <textarea class="company-important" type="text"></textarea>
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="seven columns">      
+          <button class="send-btn" type="button">Send</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </template>
