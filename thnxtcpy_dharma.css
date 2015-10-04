@@ -281,6 +281,12 @@ select{
   min-height: 10rem;
 }
 
+.regular-form .step10 p {
+    line-height: 3rem;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+
 .step10 input{
   width: 100%;
   font-size: 1.8rem;
