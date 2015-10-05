@@ -264,6 +264,12 @@ select {
   animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 }
 
+.animate-out{
+  animation-duration: .7s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
 @keyframes fadeAndScale {
     from {
         opacity: 0;
@@ -274,6 +280,18 @@ select {
         transform: scale(1, 1);
     }
 }
+
+@keyframes scaleAndFade {
+    from {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+}
+
 
 .step7, .step8{
   float: left;
