@@ -34,7 +34,9 @@ if(Meteor.isClient) {
     'keypress .your-name': function(event) {
       var text = $('.your-name').val();
       if(text !== '' && pressEnter(event)) {
+        Session.set('yourName', text);
         $('.step2').removeClass('hide');
+        $('.step1').addClass('hide');
         $('.company-name').focus();
       }
     },
