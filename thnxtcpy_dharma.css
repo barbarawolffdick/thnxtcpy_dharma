@@ -258,7 +258,7 @@ select {
     outline: none;
 }
 
-.step2{
+.animate{
   animation-duration: .7s;
   animation-name: fadeAndScale;
   animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
@@ -353,7 +353,7 @@ select {
 }
 
 .disruption-type{
-  width: 38%;
+  width: 36rem;
 }
 
 .form-inline{
@@ -371,6 +371,10 @@ select {
 .form-inline input{
   width: 42%;
   text-align: center;
+}
+
+.step5-no input{
+  border: none;
 }
 
 
