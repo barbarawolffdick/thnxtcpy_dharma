@@ -208,16 +208,16 @@ p {
 }
 
 input::-webkit-input-placeholder {
-    color: #C63187;
+    color: #888888;
 }
 input::-moz-placeholder {
-    color: #C63187;
+    color: #888888;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
-    color: #C63187;
+    color: #888888;
 }
 input:-ms-input-placeholder { 
-    color: #C63187;
+    color: #888888;
 }
 
 select {
@@ -373,10 +373,15 @@ select {
   text-align: center;
 }
 
-.step5-no input{
+.step5-no input, .step7-no input{
   border: none;
+  width: 27%;
 }
 
+.step7-no textarea{
+  width: 100%
+
+}
 
 /*color: #B7D43A; (green)*/
 /*color: #C63187; (pink)*/
