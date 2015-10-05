@@ -208,16 +208,16 @@ p {
 }
 
 input::-webkit-input-placeholder {
-    color: rgba(198, 49, 135, 1);
+    color: #C63187;
 }
 input::-moz-placeholder {
-    color: rgba(198, 49, 135, 1);
+    color: #C63187;
 }
 input:-moz-placeholder {   /* Older versions of Firefox */
-    color: rgba(198, 49, 135, 1);
+    color: #C63187;
 }
 input:-ms-input-placeholder { 
-    color: rgba(198, 49, 135, 1);
+    color: #C63187;
 }
 
 select {
@@ -233,12 +233,8 @@ select {
 }
 
 .your-name{
-    border: none;
-    color: #B7D43A;
-    margin-bottom: 0;
-    float: left;
-    margin-top: 12px;
-    width: 22%;
+  border: none;
+  color: #C63187;
 }
 
 .your-name:focus{
@@ -247,9 +243,10 @@ select {
 
 .company-name{
     border: none;
-    color: #B7D43A;
+    color: #C63187;
     width: 26%;
     margin-top: 1.2rem;
+    font-weight: 400;
 }
 
 
@@ -307,9 +304,9 @@ select {
 }
 
 .regular-form .step10 p {
-    line-height: 3rem;
-    margin-bottom: 6rem;
-    margin-top: 3rem;
+  line-height: 3rem;
+  margin-bottom: 6rem;
+  margin-top: 3rem;
 }
 
 .step10 input{
@@ -359,11 +356,23 @@ select {
   width: 38%;
 }
 
+.form-inline{
+  margin: 0 auto;
+  width: 50%;
+  font-size: 2.5rem;
+  color: #454850; 
+  }
 
 .form-inline label{
   float: left;
   margin-right: 1rem;
   } 
+
+.form-inline input{
+  width: 42%;
+  text-align: center;
+}
+
 
 /*color: #B7D43A; (green)*/
 /*color: #C63187; (pink)*/
