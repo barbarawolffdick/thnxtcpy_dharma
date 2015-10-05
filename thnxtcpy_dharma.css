@@ -192,6 +192,9 @@ p {
   line-height: 5.6rem;
 }
 
+.step1{
+  text-align: center;
+}
 
 .step1 p, .step2 p{
   margin-bottom: 0;
@@ -217,12 +220,25 @@ input:-ms-input-placeholder {
     color: rgba(198, 49, 135, 1);
 }
 
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  margin-bottom: 0;
+  border-bottom: 1px solid #C63187;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
 .your-name{
     border: none;
     color: #B7D43A;
     margin-bottom: 0;
     float: left;
     margin-top: 12px;
+    width: 22%;
 }
 
 .your-name:focus{
@@ -233,13 +249,9 @@ input:-ms-input-placeholder {
     border: none;
     color: #B7D43A;
     width: 26%;
-    float: right;
     margin-top: 1.2rem;
 }
 
-select{
-  margin-bottom: 0;
-}
 
 .company-type, .disruption-type{
   margin-top: 0.8rem;
@@ -249,9 +261,22 @@ select{
     outline: none;
 }
 
-/*.step2{
-  float: left;
-}*/
+.step2{
+  animation-duration: .7s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
 
 .step7, .step8{
   float: left;
@@ -298,6 +323,10 @@ select{
   font-weight: 400;
 }
 
+.step10 button{
+  width: 100%
+}
+
 .step10 textarea{
   width: 100%;
   min-height: 14rem;
@@ -322,13 +351,19 @@ select{
   line-height: 5rem;
 }
 
-.green{
+.pink{
   color: #C63187; 
 }
 
 .disruption-type{
   width: 38%;
 }
+
+
+.form-inline label{
+  float: left;
+  margin-right: 1rem;
+  } 
 
 /*color: #B7D43A; (green)*/
 /*color: #C63187; (pink)*/
