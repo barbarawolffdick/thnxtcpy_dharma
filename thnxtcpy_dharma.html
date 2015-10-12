@@ -58,7 +58,7 @@
       <div class="lead">Lorem ipsum dolor sit amet consectur ist</div>
       <div class="cards">
         
-        <div class="card" id="first">
+        <div class="card animate" id="first">
           <h3>1</h3>
           <img src="/01.png" alt="envelop">
           <p>We will receive and select projects of <strong>mobile businesses</strong></p>
@@ -97,16 +97,22 @@
       {{> form }}
     </div>
   </div>
+  <div class="simple-footer"></div>
 </template>
 
 
 <template name="confirmation">
   {{> header }}
   <div class="container">
-    <div class="row send-message">
-      <div class="offset-by-one columns six column">
-        <p>We are very excited to have you with us. We'll take a look at what you have said about {{ companyName }} - hope you were not way to optimistic of your own project - in that case we will not select your company - and come back to you in a while - don't expect less then a few weeks return from us, there are lots of people talking to us - with the next steps. We're expecting crazy stuff to do together and great business opportunities to explore!</p>
-        <p>Talk to you soon!</p>
+    <div class="row send-message animate">
+      <div class="offset-by-two columns eight column">
+        <p>We are very excited to have you,<span class="pink">{{ yourName }}</span> with us.</p>
+        <br>
+        <p>We'll take a look at what you have said about <span class="pink">{{ companyName }}</span> - hope you were not way to optimistic of your own project - in that case we will not select your company - and come back to you in a while - don't expect less then a few weeks return from us, there are lots of people talking to us - with the next steps. </p>
+        <br>
+        <p>We're expecting crazy stuff to do together and great business opportunities to explore!</p>
+        <br>
+        <p><strong>Talk to you soon!</strong></p>
       </div>
     </div>
   </div>
@@ -145,7 +151,7 @@
       <hr>
         <p><span class="pink">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur.</p>
         <p>Don’t take us wrong, but The Next Company needs to be a company.</p>
-        <button class="" type="button">Go back to home</button>
+        <button class="" type="button">Go back</button>
 
       </div>
       <div class="company-type-keynote hide animate">
@@ -172,7 +178,7 @@
   <div class="row">
     <div class="step5 hide animate">
       <em>This is great!</em>
-      <p>Which area <span class="green">{{ companyName }}</span> will disrupt?
+      <p>Which area <span class="pink">{{ companyName }}</span> will disrupt?
       <select class="disruption-type">
         <option value=""> Select </option>
         <option value="Business model disruption">Business model disruption</option>
@@ -185,7 +191,7 @@
   <div class="row">
     <span class="step5-no hide animate">
       <p>This is ok. Which area is <span class="pink">{{ companyName }}</span>?
-      <input class="company-area" type="text" placeholder='Type it here'>.</p>
+      <input class="company-area " type="text" placeholder='Type it here'></p>
     </span>
   </div>
 
@@ -216,7 +222,7 @@
 
     <span class="step7-no hide animate">
       <p>and creates a new business opportunity because of</p>
-      <textarea class="business-opportunity" type="text" placeholder='Type it here'></textarea>
+      <textarea class="business-opportunity" type="text" placeholder='Type it here' maxlength="140"></textarea>
     </span>
 
     <span class="step8 hide animate">
@@ -237,7 +243,7 @@
     <span class="step9 hide animate">
       <hr>
       <p>If you had to describe <span class="green">{{ companyName }}</span> in 140 characters, one tweet:</p>
-      <textarea class="company-description u-full-width" type="text" maxlength="140"></textarea>
+      <textarea class="company-description u-full-width" type="text" maxlength="140" placeholder='Type it here'></textarea>
       <hr>
     </span>
   </div>

@@ -297,10 +297,6 @@ select {
   float: left;
 }
 
-.step8 p{
-  margin-left: 1rem;
-}
-
 .step5, .step5-no{
   float: left;
 }
@@ -315,10 +311,6 @@ select {
   font-size: 3rem;
   margin-bottom: 2rem;
   display: inline-block;
-}
-
-.step9 textarea{
-  min-height: 10rem;
 }
 
 .regular-form .step10 p {
@@ -362,8 +354,10 @@ select {
   font-size: 3rem;
   margin-top: 2rem;
   padding-top: 6rem;
-  padding-bottom: 11rem;
+  padding-bottom: 6rem;
   line-height: 5rem;
+  text-align: center;
+
 }
 
 .pink{
@@ -388,7 +382,6 @@ select {
 
 .form-inline input{
   width: 42%;
-  text-align: center;
 }
 
 .step5-no input, .step7-no input{
@@ -396,9 +389,16 @@ select {
   width: 27%;
 }
 
-.step7-no textarea{
-  width: 100%
+.step7-no textarea, .step9 textarea {
+  width: 100%;
+  border: none;
+  min-height: 3em;
+  padding-left: 0;
 
+}
+
+input.company-area{
+  width: 17em;
 }
 
 /*color: #B7D43A; (green)*/
