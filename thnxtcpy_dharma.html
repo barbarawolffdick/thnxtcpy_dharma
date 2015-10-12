@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="skeleton.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="animate.css">
+
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -124,7 +126,7 @@
     </div>
   </div>
   <div class="row">
-    <p class="step2 hide animate"> Welcome to The Next Company, {{ yourName }} ! Together we will change the future! What's your company name? <input class="company-name" placeholder='Type it here'> </p>
+    <p class="step2 hide animate"> Welcome to The Next Company, <span class="pink">{{ yourName }}!</span> Together we will change the future! What's your company name? <input class="company-name" placeholder='Type it here'> </p>
   </div>
 
   <div class="row">
@@ -141,7 +143,10 @@
 
       <div class="company-type-idea hide animate">
       <hr>
-        <p><span class="pink">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur. Don’t take us wrong, but The Next Company needs to be a company.</p>
+        <p><span class="pink">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur.</p>
+        <p>Don’t take us wrong, but The Next Company needs to be a company.</p>
+        <button class="" type="button">Go back to home</button>
+
       </div>
       <div class="company-type-keynote hide animate">
       <hr>
@@ -239,7 +244,7 @@
 
 
   <div class="regular-form animate">
-    <div class="step10 hide">
+    <div class="step10 hide animate">
       <p>Now we have a few questions for you so we can understand more of <span class="green">{{ companyName }}</span> and also how we can help you.</p>
 
 
