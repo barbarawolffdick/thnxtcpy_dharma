@@ -144,12 +144,9 @@ if(Meteor.isClient) {
         })
         .done(function() {
           Router.go('confirmation');
-        })
-        .fail(function() {
-          console.log("eerrou");
         });
       } else {
-        console.log('invalido');
+        $('.field-message').removeClass('hide');
       }
     }
   });
