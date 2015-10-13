@@ -89,9 +89,20 @@ if(Meteor.isClient) {
       var value = $('.disruptive-question').val();
       if(value === 'yes') {
         $('.step5').removeClass('hide');
+        $('.step5-no').addClass('hide');
+        $('.step6-no').addClass('hide');
+        $('.step7-no').addClass('hide');
+        $('.step8').addClass('hide');
+        $('.step9').addClass('hide');
+        $('.step10').addClass('hide');
         $('.disruption-type').focus();
       } else {
         $('.step5-no').removeClass('hide');
+        $('.step5').addClass('hide');
+        $('.step7').addClass('hide');
+        $('.step8').addClass('hide');
+        $('.step9').addClass('hide');
+        $('.step10').addClass('hide');
         $('.company-area').focus();
       }
     },
