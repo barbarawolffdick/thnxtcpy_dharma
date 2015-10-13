@@ -401,8 +401,15 @@ input.company-area{
   width: 17em;
 }
 
-/*color: #B7D43A; (green)*/
-/*color: #C63187; (pink)*/
-
+.simplefooter{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  color: #C0C0C0;
+  font-size: 12px;
+}
 
 
