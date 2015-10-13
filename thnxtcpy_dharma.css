@@ -220,6 +220,26 @@ input:-ms-input-placeholder {
     color: #888888;
 }
 
+.regular-form input::-webkit-input-placeholder, .step10 textarea::-webkit-input-placeholder {
+    color: #c0c0c0;
+    font-style: italic;
+}
+
+.regular-form input::-moz-placeholder, .step10 textarea::-moz-placeholder {
+    color: #c0c0c0;
+    font-style: italic;
+}
+
+.regular-form input:-moz-placeholder, .step10 textarea:-moz-placeholder {   /* Older versions of Firefox */
+    color: #c0c0c0;
+    font-style: italic;    
+}
+
+.regular-form input:-ms-input-placeholder, .step10 textarea:-ms-input-placeholder { 
+    color: #c0c0c0;
+    font-style: italic;    
+}
+
 select {
   -moz-appearance: none;
   text-indent: 0.01px;
@@ -405,6 +425,7 @@ input.company-area{
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding-bottom: 13px;
   padding-left: 20px;
@@ -412,4 +433,8 @@ input.company-area{
   font-size: 12px;
 }
 
-
+.go-back-btn{
+  width: 300px;
+  margin-left: 300px;
+  margin-top: 45px;
+}

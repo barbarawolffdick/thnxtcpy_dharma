@@ -158,17 +158,22 @@
       <hr>
         <p><span class="pink">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur.</p>
         <p>Don’t take us wrong, but The Next Company needs to be a company.</p>
-        <button class="" type="button">Go back</button>
+        <button class="go-back-btn" type="button">Go back</button>
 
       </div>
+      
       <div class="company-type-keynote hide animate">
       <hr>
         <p><span class="pink">{{ companyName }}</span> is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.</p>
+        <button class="" type="button">Go back</button>
       </div>
+      
       <div class="company-type-2more hide animate">
       <hr>
         <p><span class="pink">{{ companyName }}</span> is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
+        <button class="" type="button">Go back</button>      
       </div>
+      
       <div class="company-type-startup hide animate">
       <hr>
         <p><span class="pink">{{ companyName }}</span> is a startup and this is exactly what we are looking for. Would you consider <span class="pink">{{ companyName }}</span> a disruptive startup?
@@ -266,7 +271,7 @@
           <label>1. Do you have a website? </label>
         </div>
         <div class="five columns">
-          <input class="company-url" type="text">
+          <input class="company-url" type="text" placeholder="Type the address">
         </div>
       </div>
 
@@ -275,7 +280,7 @@
           <label>2. Is there a video presentation?</label>
         </div>
         <div class="five columns">
-          <input class="company-video" type="text">
+          <input class="company-video" type="text" placeholder="Leave a link here">
         </div>
       </div>
 
@@ -284,9 +289,9 @@
           <label>3. Where you performed on the press?</label> 
         </div>
         <div class="five columns">      
-          <input class="company-press-1" type="text">
-          <input class="company-press-2" type="text">
-          <input class="company-press-3" type="text">      
+          <input class="company-press-1" type="text" placeholder="Leave a link here">
+          <input class="company-press-2" type="text" placeholder="Another one? Great">
+          <input class="company-press-3" type="text" placeholder="Three is a charm">
         </div>
       </div>
 
@@ -296,7 +301,7 @@
           <label>4. How do you think the next company could help you?</label> 
         </div>
         <div class="five columns">
-          <input class="company-needs" type="text">
+          <input class="company-needs" type="text" placeholder="Be straight to the point">
         </div>
       </div>
 
@@ -305,7 +310,7 @@
           <label>5. Can you give us three people (email/phone), which could talk about <span class="green">{{ companyName }}</span>?</label>
         </div>
         <div class="five columns">
-          <input class="company-people-1" type="text">
+          <input class="company-people-1" type="text" placeholder="Name and email is fine">
           <input class="company-people-2" type="text">
           <input class="company-people-3" type="text">
         </div>
@@ -327,7 +332,7 @@
           <label>7. Is there something we did not ask you but you think it’s important?</label>
         </div>
         <div class="five columns">      
-          <textarea class="company-important" type="text"></textarea>
+          <textarea class="company-important" type="text" placeholder="Don't hesitate"></textarea>
         </div>
       </div>
 
