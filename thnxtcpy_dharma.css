@@ -438,3 +438,7 @@ input.company-area{
   margin-left: 300px;
   margin-top: 45px;
 }
+
+body {
+  margin-bottom: 3rem;
+}

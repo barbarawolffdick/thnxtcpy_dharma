@@ -31,14 +31,6 @@
   </footer>
 </template>
 
-<template name="simplefooter">
-  <div class="container simplefooter">
-    <p>Copyright 2016 © Grupo ABC <br>
-    Todos direitos reservados</p>
-  </div>
-</template>
-
-
 <template name="home">
   {{> header }}
 
@@ -171,8 +163,11 @@
       
       <div class="company-type-2more hide animate">
       <hr>
-        <p><span class="pink">{{ companyName }}</span> is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? (campo aberto para preencher que não aparece na resposta). We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
-        <button class="" type="button">Go back</button>      
+      <p><span class="pink">{{ companyName }}</span> is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? <br>
+        <input class="email-address u-full-width" type="text" placeholder='Email address'><br>
+        <textarea class="expecting u-full-width" type="text" placeholder='Type it here'></textarea><br>
+        We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
+        <button class="send-btn-2 u-pull-right" type="button">Send</button>      
       </div>
       
       <div class="company-type-startup hide animate">
@@ -351,5 +346,12 @@
 <template name="stepCounter">
   <div>
     {{ counter }} of 8 steps. 
+  </div>
+</template>
+
+<template name="simplefooter">
+  <div class="container simplefooter">
+    <p>Copyright 2016 © Grupo ABC <br>
+    Todos direitos reservados</p>
   </div>
 </template>

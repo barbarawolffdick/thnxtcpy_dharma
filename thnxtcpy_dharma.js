@@ -26,6 +26,15 @@ var getFormInfo = function() {
   return formData;
 }
 
+var getForm2Info = function() {
+  var formData = {
+    "1.Email": $('.email-address').val(),
+    "2.Expecting": $('.expecting').val(),
+  }
+
+  return formData;
+}
+
 var validateInfo = function(data) {
   var count = 0;
   _.each(data, function(value, key) {
@@ -158,6 +167,21 @@ if(Meteor.isClient) {
         });
       } else {
         $('.field-message').removeClass('hide');
+      }
+    },
+    'click .send-btn-2': function(event) {
+      var info = getForm2Info();
+      console.log(info);
+      if(validateInfo(info)) {
+        $.ajax({
+          url: "//formspree.io/douglasdetoni92@gmail.com", 
+          method: "POST",
+          data: info,
+          dataType: "json"
+        })
+        .done(function() {
+          Router.go('confirmation');
+        });
       }
     }
   });
