@@ -183,6 +183,9 @@ if(Meteor.isClient) {
           Router.go('confirmation');
         });
       }
+    },
+    'click .go-back-btn': function(event) {
+      Router.go('/');
     }
   });
 
