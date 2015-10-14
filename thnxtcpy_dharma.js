@@ -176,6 +176,12 @@ if(Meteor.isClient) {
       return Session.get('stepCounter');
     }
   });
+
+  Template.confirmation.helpers({
+    companyName: function() {
+      return Session.get('companyName');
+    }
+  });
 }
 
 
