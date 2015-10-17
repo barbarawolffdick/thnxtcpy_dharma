@@ -189,6 +189,10 @@ if(Meteor.isClient) {
     }
   });
 
+  Template.home.rendered = function() {
+    new WOW().init();
+  }
+
   Template.form.helpers({
     yourName: function() {
       return Session.get('yourName');
