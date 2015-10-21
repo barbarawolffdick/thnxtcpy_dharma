@@ -5,12 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 kadira:blaze-layout
 showdown
 iron:router
 underscore
-natestrauser:animate-css
 okgrow:router-autoscroll
 timmyg:wow
