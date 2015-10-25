@@ -1,20 +1,32 @@
 /* CSS declarations go here */
 
 header{ 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3.4rem;
+  background-color: white;
+/*  position: fixed;
+  width: 100%;
+  z-index: 2;*/
 }
 
-header .item{
-    color: #666;
+nav{
+  float: right;
+  padding-right: 7rem;
 }
 
 header a{
-    display: inline-block;
-    text-decoration: none;
-    color: #df4f1a;
-    margin-right: 35px;
-    margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 35px;
+  margin-top: 10px;
+  color: #999;
+  cursor: pointer;
+  -webkit-transition: 0.2s ;
+  -moz-transition: 0.2s ;
+  -ms-transition: 0.2s ;
+  -o-transition: 0.2s ;
+  transition: 0.2s;
 }
 
 header a:last-child{
@@ -22,36 +34,52 @@ header a:last-child{
 }
 
 header a:hover{
-    color: #aa3a10;
+    color: #333;
 }
 
 header img{ 
-  width: 20%;
+  width: 15%;
 }
 
-.banner img{
+/*.banner img{
     width: 100%;
+}*/
+
+.jambo-tron{
+  background-image: url(banner.png);
+  overflow: hidden;
+  height: 85rem;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+}
+
+.jambo-tron p{
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 125%;
+  width: 51%;
+  margin-left: 25%;
+  margin-top: 19%;
+  margin-bottom: 3%;
 }
 
 a.call-to-action{
-    font-size: 5.7rem;
-    color: #fff;
-    line-height: 6.7rem;
-    font-family: Raleway-Bold;
-    position: absolute;
-    right: 50rem;
-    top: 32.5rem;
-    border: 0.8rem solid white;
-    z-index: 2;
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-    text-decoration: none;
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+  font-size: 5.7rem;
+  color: #fff;
+  font-family: "raleway-bold", arial, sans-serif;
+  text-decoration: none;
+  border: 0.8rem solid white;
+  margin-left: 28%;
+  padding: 1rem 3rem;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 a.call-to-action:hover{
@@ -64,14 +92,16 @@ a.call-to-action:hover{
 }
 
 .what h3{
-  font-size: 32px;
-  width: 75%;
+  width: 54%;
   margin-bottom: 42px;
+  font-family: "raleway-bold", arial, sans-serif;
+  color: #4a4a4a;
+  font-size: 32px;
 }
 
 .what p{
   font-size: 26px;
-  width: 70%;
+  width: 87%;
 }
 
 .what img{
