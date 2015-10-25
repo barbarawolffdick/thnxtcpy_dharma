@@ -26,12 +26,7 @@ header a:hover{
 }
 
 header img{ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    margin-bottom: 32px;
-    margin-top: 25px;
+  width: 20%;
 }
 
 .banner img{
@@ -63,18 +58,20 @@ a.call-to-action:hover{
     opacity: 1;
 }
 
-
 .what{
-    background-color: #fff;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 16rem;
 }
 
-.what p {
-    text-align: center;
-    font-size: 3rem;
-    color: #3f4045;
-    line-height: 5.5rem;
+.what h3{
+  font-size: 32px;
+  width: 75%;
+  margin-bottom: 42px;
+}
+
+.what p{
+  font-size: 26px;
+  width: 70%;
 }
 
 .what img{
@@ -86,23 +83,10 @@ a.call-to-action:hover{
 
 }
 
-.who { 
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-    background-color: #f7f5f5;
-    text-align: right;
-}
-
-.who span{
-    font-size: 4.3rem;
-    color: #222222;
-    line-height: 5.6rem;
-}
-
 .how{
     background-color: #f7f5f5;
-    padding-bottom: 12rem;
-    padding-top: 7rem;
+    padding-bottom: 9rem;
+    padding-top: 10rem;
     margin: 0 auto;
 }
 
