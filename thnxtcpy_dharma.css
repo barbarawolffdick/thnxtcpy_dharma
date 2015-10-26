@@ -122,13 +122,17 @@ a.call-to-action:hover{
 
 .how h2{
     margin-bottom: 10px;
-    font-size: 36px;
+    font-size: 32px;
+    font-family: "raleway-bold", arial, sans-serif;
+    color: #4a4a4a;
 }
 
 .how .lead{
     font-size: 23px;
     line-height: 38px;
-    width: 70%;
+    width: 59%;
+    color: #4a4a4a;
+
   }
 
 .how .cards .card{
@@ -136,8 +140,8 @@ a.call-to-action:hover{
     width: 205px;
     height: 230px;
     float: left;
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-right: 40px;
+    margin-top: 55px;
 }
 
 .how .cards .pink-border{
@@ -184,19 +188,37 @@ a.call-to-action:hover{
   margin-bottom: 12rem;
 }
 
+.jambo-tron-footer{
+  background-image: url(footer-bg.png);
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+  height: 69rem;
+  padding-top: 30rem;
 
-footer{
-    background-color: #454850;
 }
 
 footer p{
-    margin-bottom: 0;
-    color: #fff;
-    padding-bottom: 1rem;
+  margin-bottom: 0;
+  color: #999;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 footer img{
-    width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+}
+
+#copyright{
+  margin-left: 3rem;
+  margin-top: 1rem;
+  color: #999;
 }
 
 /*Form styles*/
