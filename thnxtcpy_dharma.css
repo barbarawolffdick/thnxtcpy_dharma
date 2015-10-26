@@ -1,21 +1,32 @@
 /* CSS declarations go here */
 
-
 header{ 
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3.4rem;
+  background-color: white;
+/*  position: fixed;
+  width: 100%;
+  z-index: 2;*/
 }
 
-header .item{
-    color: #666;
+nav{
+  float: right;
+  padding-right: 7rem;
 }
 
 header a{
-    display: inline-block;
-    text-decoration: none;
-    color: #df4f1a;
-    margin-right: 35px;
-    margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 35px;
+  margin-top: 10px;
+  color: #999;
+  cursor: pointer;
+  -webkit-transition: 0.2s ;
+  -moz-transition: 0.2s ;
+  -ms-transition: 0.2s ;
+  -o-transition: 0.2s ;
+  transition: 0.2s;
 }
 
 header a:last-child{
@@ -23,59 +34,74 @@ header a:last-child{
 }
 
 header a:hover{
-    color: #aa3a10;
+    color: #333;
 }
 
 header img{ 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    margin-bottom: 32px;
-    margin-top: 25px;
+  width: 15%;
 }
 
-.banner img{
+/*.banner img{
     width: 100%;
+}*/
+
+.jambo-tron{
+  background-image: url(banner.png);
+  overflow: hidden;
+  height: 85rem;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+}
+
+.jambo-tron p{
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 125%;
+  width: 51%;
+  margin-left: 25%;
+  margin-top: 19%;
+  margin-bottom: 3%;
 }
 
 a.call-to-action{
-    font-size: 5.7rem;
-    color: #fff;
-    line-height: 6.7rem;
-    font-family: Raleway-Bold;
-    position: absolute;
-    right: 50rem;
-    top: 32.5rem;
-    border: 0.8rem solid white;
-    z-index: 2;
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-    text-decoration: none;
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out;
-    -o-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+  font-size: 5.7rem;
+  color: #fff;
+  font-family: "raleway-bold", arial, sans-serif;
+  text-decoration: none;
+  border: 0.8rem solid white;
+  margin-left: 28%;
+  padding: 1rem 3rem;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 a.call-to-action:hover{
     opacity: 1;
 }
 
-
 .what{
-    background-color: #fff;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 16rem;
 }
 
-.what p {
-    text-align: center;
-    font-size: 3rem;
-    color: #3f4045;
-    line-height: 5.5rem;
+.what h3{
+  width: 54%;
+  margin-bottom: 42px;
+  font-family: "raleway-bold", arial, sans-serif;
+  color: #4a4a4a;
+  font-size: 32px;
+}
+
+.what p{
+  font-size: 26px;
+  width: 87%;
 }
 
 .what img{
@@ -87,92 +113,112 @@ a.call-to-action:hover{
 
 }
 
-.who { 
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-    background-color: #f7f5f5;
-    text-align: right;
-}
-
-.who span{
-    font-size: 4.3rem;
-    color: #222222;
-    line-height: 5.6rem;
-}
-
 .how{
     background-color: #f7f5f5;
-    padding-bottom: 12rem;
-    padding-top: 7rem;
+    padding-bottom: 9rem;
+    padding-top: 10rem;
+    margin: 0 auto;
 }
 
 .how h2{
-    background-color: #f7f5f5;
-    margin-left: 9.6rem;
-    margin-bottom: 0;
-    font-size: 2.5rem;
-}
-
-.how h3{
-    font-size: 20px;
-    margin-bottom: 0;
-    padding-left: 10px;
-    padding-top: 6px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-family: "raleway-bold", arial, sans-serif;
+    color: #4a4a4a;
 }
 
 .how .lead{
-    font-size: 1.8rem;
-    margin-left: 9.6rem;
-    margin-bottom: 5rem;
+    font-size: 23px;
+    line-height: 38px;
+    width: 59%;
+    color: #4a4a4a;
 
-}
+  }
 
 .how .cards .card{
     background-color: #fff;
-    height: 30rem;
-    width: 23rem;
+    width: 205px;
+    height: 230px;
     float: left;
-    margin-left: 10rem;
+    margin-right: 40px;
+    margin-top: 55px;
+}
+
+.how .cards .pink-border{
+    border-bottom: 5px solid #C63187;
+}
+
+.how .cards .green-border{
+    border-bottom: 5px solid #B7D43A;
 }
 
 .how .cards .card p{
-    color: #000000;
-    line-height: 2.3rem;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 2rem;
+  color: #000000;
+  line-height: 2.3rem;
+  text-align: center;
+  margin-left: 28px;
+  margin-right: 28px;
+  font-size: 16px;
 }
 
 .how .cards .card img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 53%;
+  margin-top: 27px;
+  margin-bottom: 20px;
+  }
+
+
+.quote p{
+  margin-left: 15rem;
+  font-size: 48px;
+  width: 50%;
+  margin-top: 15rem;
+  margin-bottom: 12rem;
+  color: #C6C6C6;
+  font-family: Raleway-light, arial, sans-serif;
+  line-height: 120%;
 }
 
-#third img{
-    margin-bottom: 3.5rem;
-    margin-top: 1.5rem;
+.quote img{
+  width: 12%;
+  margin-left: 15rem;
+  margin-bottom: 12rem;
 }
 
-#fourth img{
-    margin-bottom: 5rem;
-    margin-top: 3rem;
-}
+.jambo-tron-footer{
+  background-image: url(footer-bg.png);
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+  height: 69rem;
+  padding-top: 30rem;
 
-footer{
-    background-color: #454850;
 }
 
 footer p{
-    margin-bottom: 0;
-    color: #fff;
-    padding-bottom: 1rem;
+  margin-bottom: 0;
+  color: #999;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 footer img{
-    width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 3rem solid white;
+  border-right: 3rem solid white;
+}
+
+#copyright{
+  margin-left: 3rem;
+  margin-top: 1rem;
+  color: #999;
 }
 
 /*Form styles*/
@@ -279,13 +325,13 @@ select {
 }
 
 .animate{
-  animation-duration: .7s;
+  animation-duration: .5s;
   animation-name: fadeAndScale;
   animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 }
 
 .animate-out{
-  animation-duration: .7s;
+  animation-duration: .5s;
   animation-name: fadeAndScale;
   animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 }

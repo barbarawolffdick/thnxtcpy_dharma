@@ -11,80 +11,85 @@
 
 
   <link rel="icon" type="image/png" href="images/favicon.png">
-
 </head>
 
 <template name="header">
-  <div class="container">
-    <header>
+    <header class="wow fadeInDown" data-wow-delay="0.1s" data-wow-duration="0.3s">
       <img src="/logo.png" alt="Home" id="logo">
+      <nav>
+        <a> Link one </a>
+        <a> Link two </a>
+      </nav>
     </header>
-  </div>
 </template>
 
 <template name="footer">
-  <footer>
-    <img src="/footer.png" alt="tell us your story">
-    <div class="container">
-      <p>Copyright 2016 © Grupo ABC Todos direitos reservados</p>
-    </div>
+  <footer class="jambo-tron-footer">
+    <a class="call-to-action" href="tell_your_history"> TELL US YOUR STORY</a>
   </footer>
+  <p id="copyright">Copyright 2016 © Grupo ABC Todos direitos reservados</p>
 </template>
 
 <template name="home">
   {{> header }}
 
   <section class="banner">
-    <div class="">
+    <div class="jambo-tron wow fadeIn" data-wow-delay="0.2s" data-wow-duration="0.5s">
       <h1 class="hide"> The Next Company </h1>
-      <a class="call-to-action" href="tell_your_history"> TELL US YOUR STORY</a>
-      <img src="/banner01.png" alt="Banner">
+      <p class="wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.5s"> But I must explain to you how all this mistaken <strong>idea of denouncing pleasure</strong> give you a <strong>complete account of the</strong> greater story.</p>
+      <a class="call-to-action wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.5s" href="tell_your_history"> TELL US YOUR STORY</a>
     </div>
   </section>
 
   <section class="what row" id="what">
     <h2 class="hide"> What </h2>
-    <div class="container">
-      <div class="">
-        <p> An initiative that will <b>explore business opportunities</b> in the mobile arena by <b>creating an environment</b> that will facilitate the selection and prototyping, the MVP building, the budgeting process, the funding strategy and the <b>implementation of innovative mobile businesses.</b></p>
-      </div>
+    <div class="container" >
+      <h3 class="wow fadeIn" data-wow-delay="0.7s" data-wow-duration="0.5s">When our power of choice is untrammelled and when nothing prevents our being able to do what we like best.</h3>
+      <p class="wow fadeIn" data-wow-delay="0.9s" data-wow-duration="1.2s">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+      <br />
+      <p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1.2s">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
     </div>
   </section>
 
 
   <section class="how row">
     <div class="container">
-      <h2 id="how">HOW IT WORKS</h2>
-      <div class="lead">Lorem ipsum dolor sit amet consectur ist</div>
+      <h2 id="how" class="wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.2s">How it works</h2>
+      <div class="lead wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.2s">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</div>
       <div class="cards">
         
-        <div class="card wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" id="first">
-          <h3>1</h3>
-          <img src="/01.png" alt="envelop">
-          <p>We will receive and select projects of <strong>mobile businesses</strong></p>
+        <div class="card pink-border wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" id="first">
+          <img src="/icon05.png" alt="envelop">
+          <p>Select projects of <strong>mobile businesses</strong></p>
         </div>
         
-        <div class="card wow fadeIn" data-wow-delay="2s" data-wow-duration="2s" id="second">
-          <h3>2</h3>
-          <img src="/02.png" alt="envelop">
-          <p>Validate the <strong>entrepreneurs</strong> and the business plans</p>
+        <div class="card green-border wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s" id="second">
+          <img src="/icon06.png" alt="envelop">
+          <p>Validate its <strong>business plans</strong></p>
         </div>
 
-        <div class="card wow fadeIn" data-wow-delay="3s" data-wow-duration="2s" id="third">
-          <h3>3</h3>
-          <img src="/03.png" alt="envelop">
-          <p>Select the winners and <strong>lead investment rounds</strong></p>
+        <div class="card pink-border wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="0.5s" id="third">
+          <img src="/icon07.png" alt="envelop">
+          <p>Select the winners <strong>investment rounds</strong></p>
         </div>
 
-        <div class="card wow fadeIn" data-wow-delay="4s" data-wow-duration="2s" id="fourth">
-          <h3>4</h3>
-          <img src="/04.png" alt="envelop">
-          <p>Support the <strong>start up phase</strong> of the companies</p>
+        <div class="card green-border wow fadeInUp" data-wow-delay="2s" data-wow-duration="0.5s" id="fourth">
+          <img src="/icon08.png" alt="envelop">
+          <p><strong>Start up phase</strong> of the companies</p>
         </div>
 
       </div>
     </div>
   </section>
+
+  <section class="quote row">
+
+  <p class="wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.2s"> “No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those do not know” </p>
+  <img src="/logo-icon.png">
+    
+  </section>
+ 
+
   {{> footer }}
 </template>
 
