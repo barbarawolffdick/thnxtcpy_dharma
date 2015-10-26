@@ -166,6 +166,25 @@ a.call-to-action:hover{
   margin-bottom: 20px;
   }
 
+
+.quote p{
+  margin-left: 15rem;
+  font-size: 48px;
+  width: 50%;
+  margin-top: 15rem;
+  margin-bottom: 12rem;
+  color: #C6C6C6;
+  font-family: Raleway-light, arial, sans-serif;
+  line-height: 120%;
+}
+
+.quote img{
+  width: 12%;
+  margin-left: 15rem;
+  margin-bottom: 12rem;
+}
+
+
 footer{
     background-color: #454850;
 }
