@@ -12,7 +12,7 @@ header{
 
 nav{
   float: right;
-  padding-right: 7rem;
+  padding-right: 3.1rem;
 }
 
 header a{
@@ -68,12 +68,12 @@ header img{
 }
 
 a.call-to-action{
-  font-size: 5.7rem;
+  font-size: 2.7rem;
   color: #fff;
   font-family: "raleway-bold", arial, sans-serif;
   text-decoration: none;
-  border: 0.8rem solid white;
-  margin-left: 28%;
+  border: 0.5rem solid white;
+  margin-left: 36%;
   padding: 1rem 3rem;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -96,12 +96,12 @@ a.call-to-action:hover{
   margin-bottom: 42px;
   font-family: "raleway-bold", arial, sans-serif;
   color: #4a4a4a;
-  font-size: 32px;
+  font-size: 2.5rem;
 }
 
 .what p{
-  font-size: 26px;
-  width: 87%;
+    font-size: 1.8rem;
+    width: 73%;
 }
 
 .what img{
@@ -114,34 +114,33 @@ a.call-to-action:hover{
 }
 
 .how{
-    background-color: #f7f5f5;
-    padding-bottom: 9rem;
-    padding-top: 10rem;
-    margin: 0 auto;
+  background-color: #f7f5f5;
+  padding-bottom: 16rem;
+  padding-top: 13rem;
 }
 
 .how h2{
-    margin-bottom: 10px;
-    font-size: 32px;
-    font-family: "raleway-bold", arial, sans-serif;
-    color: #4a4a4a;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-family: "raleway-bold", arial, sans-serif;
+  color: #4a4a4a;
 }
 
 .how .lead{
-    font-size: 23px;
-    line-height: 38px;
-    width: 59%;
-    color: #4a4a4a;
+  font-size: 1.8rem;
+  line-height: 140%;
+  width: 59%;
+  color: #4a4a4a;
 
   }
 
 .how .cards .card{
-    background-color: #fff;
-    width: 205px;
-    height: 230px;
-    float: left;
-    margin-right: 40px;
-    margin-top: 55px;
+  background-color: #fff;
+  width: 190px;
+  height: 200px;
+  float: left;
+  margin-right: 55px;
+  margin-top: 55px;
 }
 
 .how .cards .pink-border{
@@ -153,19 +152,19 @@ a.call-to-action:hover{
 }
 
 .how .cards .card p{
-  color: #000000;
-  line-height: 2.3rem;
-  text-align: center;
-  margin-left: 28px;
-  margin-right: 28px;
-  font-size: 16px;
+    color: #999999;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 1.6rem;
 }
 
 .how .cards .card img{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 53%;
+  width: 43%;
   margin-top: 27px;
   margin-bottom: 20px;
   }
@@ -173,7 +172,7 @@ a.call-to-action:hover{
 
 .quote p{
   margin-left: 15rem;
-  font-size: 48px;
+  font-size: 36px;
   width: 50%;
   margin-top: 15rem;
   margin-bottom: 12rem;
@@ -196,7 +195,7 @@ a.call-to-action:hover{
   box-sizing: border-box;
   border-left: 3rem solid white;
   border-right: 3rem solid white;
-  height: 69rem;
+  height: 56rem;
   padding-top: 30rem;
 
 }
@@ -218,7 +217,8 @@ footer img{
 #copyright{
   margin-left: 3rem;
   margin-top: 1rem;
-  color: #999;
+  color: #ddd;
+  font-size: 1.1rem;
 }
 
 /*Form styles*/
