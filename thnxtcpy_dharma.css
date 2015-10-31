@@ -5,9 +5,6 @@ header{
   padding-bottom: 2rem;
   padding-left: 3.4rem;
   background-color: white;
-/*  position: fixed;
-  width: 100%;
-  z-index: 2;*/
 }
 
 nav{
@@ -40,10 +37,6 @@ header a:hover{
 header img{ 
   width: 15%;
 }
-
-/*.banner img{
-    width: 100%;
-}*/
 
 .jambo-tron{
   background-image: url(banner.png);
@@ -152,7 +145,7 @@ a.call-to-action:hover{
 }
 
 .how .cards .card p{
-    color: #999999;
+    color: #4a4a4a;
     line-height: 2.3rem;
     text-align: center;
     margin-left: 24px;
@@ -488,3 +481,98 @@ input.company-area{
 body {
   margin-bottom: 3rem;
 }
+
+@media (max-width: 768px){
+  .jambo-tron p {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60%;
+    margin-bottom: 12%;
+    width: 80%;
+  }
+
+  a.call-to-action{
+    font-size: 13px;
+    margin-left: 10%;
+  }
+
+.jambo-tron{
+  background-image: url(banner-sm.png);
+  height: 57rem;
+  background-position: center;
+  }
+
+header img {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+.what, .how{
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.what h3 {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+
+.what p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+.how h2{
+  margin-bottom: 9%
+}
+
+.how .cards .card {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 8%;
+  padding-top: 4%;
+  padding-left: 6%;
+  padding-bottom: 4%;
+
+}
+
+.how .cards .card img {
+  width: 20%;
+  margin: 0;
+  float: left;
+}
+
+.how .cards .card p {
+  margin-left: 8%; 
+  margin-right: 0;
+  float: left;
+  width: 53%;
+  text-align: left;
+  margin-top: 3%;
+  line-height: 121%;
+}
+
+.quote p {
+  margin-left: 10%;
+  font-size: 21px;
+  width: 90%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+}
+
+
+
+
+
+
+
+
+
+
