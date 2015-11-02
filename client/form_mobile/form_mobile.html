@@ -20,7 +20,7 @@
       <label>What do you have in hands?</label>
     </div>
     <div class="row">
-      <select class="disruptive-question">
+      <select class="company-type mobile">
         <option value=""> Select</option>
         <option value="idea">Idea</option>
         <option value="keynote">Keynote Presentantion</option>
@@ -29,12 +29,59 @@
       </select>
     </div>
   </div>
+
+  {{> companyType }}
+
+</template>
+
+<template name="companyType">
+  {{#if equals typeChoose "idea" }}
+    {{> idea }}
+  {{/if}}
+
+  {{#if equals typeChoose "keynote" }}
+    {{> keynote }}
+  {{/if}}
+
+  {{#if equals typeChoose "2more" }}
+    {{> twoMore }}
+  {{/if}}
+
+  {{#if equals typeChoose "startup" }}
+    {{> startup }}
+  {{/if}}
+</template> 
+
+<template name="idea">
+  <hr>
+  Your company is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur.
+  Don’t take us wrong, but The Next Company needs to be a company.
+  <button type="button">Go back</button>
+</template>
+
+<template name="keynote">
+  <hr>
+  Your company is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.
+  <button type="button">Go back</button>
+</template>
+
+<template name="twoMore">
+  <hr>
+Your company is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? <br>
+  <input class="email-address u-full-width" type="text" placeholder='Email address'><br>
+  <textarea class="expecting u-full-width" type="text" placeholder='Type it here'></textarea><br>
+  We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.
+  <button class="send-btn-2 u-pull-right" type="button">Send</button>      
+</template>
+
+<template name="startup">
+  <hr>
   <div class="select">
     <div class="row question">
       <label>Would you consider your company disruptive?</label>
     </div>
     <div class="row">
-      <select class="disruptive-question">
+      <select class="">
         <option value="">Select</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -46,7 +93,7 @@
       <label>Which area your company will disrupt?</label>
     </div>
     <div class="row">
-      <select class="disruptive-question">
+      <select class="">
         <option value=""> Select </option>
         <option value="Business model disruption">Business model disruption</option>
         <option value="Product disruption">Product disruption</option>
@@ -59,7 +106,7 @@
       <label>... and will create a</label>
     </div>
     <div class="row">
-      <select class="disruptive-question">
+      <select class="">
         <option value="">select an option</option>
         <option value="New business opportunity">new business opportunity</option>
         <option value="New market">new market</option>
@@ -72,7 +119,7 @@
       <label>... in</label>
     </div>
     <div class="row">
-      <select class="disruptive-question">
+      <select class="">
         <option value="">select</option>
         <option value="Our country">our country</option>
         <option value="The world">the world</option>

@@ -51,6 +51,10 @@ if(Meteor.isClient) {
   Session.set('companyName', 'Your Company');
   Session.set('stepCounter', 1);
 
+  Template.registerHelper('equals', function (a, b) {
+    return a === b;
+  });
+
   Template.form.events({
     'keypress .your-name': function(event) {
       var text = $('.your-name').val();
