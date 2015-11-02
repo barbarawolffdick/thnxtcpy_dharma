@@ -1,0 +1,223 @@
+<template name="form">
+
+  <div class="step1">
+    <div class="row">
+      <p class="step1 animate-out"> So you are interested in talking to us, that's great!</p> 
+    </div>
+    <div class="row form-inline animate-out">
+      <label>What is your name?</label> 
+      <input class="your-name" placeholder='Type it here' autofocus>
+    </div>
+  </div>
+  <div class="row">
+    <p class="step2 hide animate"> Welcome to The Next Company, <span class="pink">{{ yourName }}!</span> Together we will change the future! What's your company name? <input class="company-name" placeholder='Type it here'> </p>
+  </div>
+
+  <div class="row">
+    <div class="step4 hide animate">
+      <p id="question4">What do you have in hands?</p>
+      <select class="company-type">
+        <option value=""> Select</option>
+        <option value="idea">Idea</option>
+        <option value="keynote">Keynote Presentantion</option>
+        <option value="2more">2+ years old company</option>
+        <option value="startup">Start Up</option>
+      </select>
+
+
+      <div class="company-type-idea hide animate">
+        <hr>
+        <p><span class="pink">{{ companyName }}</span> is just an idea, which is fine, but we are looking for ideas that have become companies already, so we suggest you come back here once you transform your idea into a company and became and entrepreneur.</p>
+        <p>Don’t take us wrong, but The Next Company needs to be a company.</p>
+        <button class="go-back-btn" type="button">Go back</button>
+
+      </div>
+
+      <div class="company-type-keynote hide animate">
+        <hr>
+        <p><span class="pink">{{ companyName }}</span> is a keynote presentation, not a company yet. Once The Next Company supports new startups, we suggest you keep working on your studies and plans and come back when you are already running your company. We would love to look at all desks and presentations, but we don’t have staff for that, so we ask you to come back later when you’ve started your company. There are several good articles on how to move in the start, this one from Inc is especially simple and to the point.</p>
+        <button class="go-back-btn" type="button">Go back</button>
+      </div>
+
+      <div class="company-type-2more hide animate">
+        <hr>
+        <p><span class="pink">{{ companyName }}</span> is a two or more years old startup, which means you are a survivor on the entrepreneurial jungle! Congrats. The Next Company was created to support the early moments of a startup, which is not your case. What would you be expecting to get from us and why? <br>
+        <input class="email-address u-full-width" type="text" placeholder='Email address'><br>
+        <textarea class="expecting u-full-width" type="text" placeholder='Type it here'></textarea><br>
+        We’ve got your explanation. We will take a look, but as we said, we normally support early stage startups, don’t be too optimistic.</p>
+        <button class="send-btn-2 u-pull-right" type="button">Send</button>      
+      </div>
+
+      <div class="company-type-startup hide animate">
+        <hr>
+        <p><span class="pink">{{ companyName }}</span> is a startup and this is exactly what we are looking for. Would you consider <span class="pink">{{ companyName }}</span> a disruptive startup?
+        <select class="disruptive-question">
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="step5 hide animate">
+      <em>This is great!</em>
+      <p>Which area <span class="pink">{{ companyName }}</span> will disrupt?
+      <select class="disruption-type">
+        <option value=""> Select </option>
+        <option value="Business model disruption">Business model disruption</option>
+        <option value="Product disruption">Product disruption</option>
+        <option value="Process disruption">Process disruption</option>
+      </select>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <span class="step5-no hide animate">
+      <p>This is ok. Which area is <span class="pink">{{ companyName }}</span>?
+      <input class="company-area " type="text" placeholder='Type it here'></p>
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step6-no hide animate">
+      <p><span class="green">{{ companyName }}'s</span> differentiation is about
+      <select class="differentiation-type">
+        <option value="">select an option</option>
+        <option value="Incremental innovation">incremental innovation</option>
+        <option value="Doing something better">doing something better</option>
+        <option value="A local copy cat">a local copy cat</option>
+      </select>
+      </p>
+    </span>
+  </div>
+
+  <div class="row">
+    <span class="step7 hide animate">
+      <p>and will create a
+      <select class="new-type">
+        <option value="">select an option</option>
+        <option value="New business opportunity">new business opportunity</option>
+        <option value="New market">new market</option>
+        <option value="New segment">new segment</option>
+      </select>
+      </p>
+    </span>
+
+    <span class="step7-no hide animate">
+      <p>and creates a new business opportunity because of</p>
+      <textarea class="business-opportunity" type="text" placeholder='Type it here' maxlength="140"></textarea>
+    </span>
+
+    <span class="step8 hide animate">
+      <p>in
+      <select class="range-type">
+        <option value="">select</option>
+        <option value="Our country">our country</option>
+        <option value="The world">the world</option>
+      </select>
+      .
+      </p>
+    </span>
+
+  </div>
+
+
+  <div class="row">
+    <span class="step9 hide animate">
+      <hr>
+      <p>If you had to describe <span class="green">{{ companyName }}</span> in 140 characters, one tweet:</p>
+      <textarea class="company-description u-full-width" type="text" maxlength="140" placeholder='Type it here'></textarea>
+      <hr>
+    </span>
+  </div>
+
+
+  <div class="regular-form animate">
+    <div class="step10 hide animate">
+      <p>Now we have a few questions for you so we can understand more of <span class="green">{{ companyName }}</span> and also how we can help you.</p>
+
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>1. Do you have a website? </label>
+        </div>
+        <div class="five columns">
+          <input class="company-url" type="text" placeholder="Type the address">
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>2. Is there a video presentation?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-video" type="text" placeholder="Leave a link here">
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="seven columns">      
+          <label>3. Where you performed on the press?</label> 
+        </div>
+        <div class="five columns">      
+          <input class="company-press-1" type="text" placeholder="Leave a link here">
+          <input class="company-press-2" type="text" placeholder="Another one? Great">
+          <input class="company-press-3" type="text" placeholder="Three is a charm">
+        </div>
+      </div>
+
+
+      <div class="row question">
+        <div class="seven columns">  
+          <label>4. How do you think the next company could help you?</label> 
+        </div>
+        <div class="five columns">
+          <input class="company-needs" type="text" placeholder="Be straight to the point">
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>5. Can you give us three people (email/phone), which could talk about <span class="green">{{ companyName }}</span>?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-people-1" type="text" placeholder="Name and email is fine">
+          <input class="company-people-2" type="text">
+          <input class="company-people-3" type="text">
+        </div>
+      </div>
+
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>6. What you don’t want from us?</label>
+        </div>
+        <div class="five columns">
+          <input class="company-important" type="text">
+        </div>
+      </div>
+
+
+      <div class="row question">
+        <div class="seven columns">
+          <label>7. Is there something we did not ask you but you think it’s important?</label>
+        </div>
+        <div class="five columns">      
+          <textarea class="company-important" type="text" placeholder="Don't hesitate"></textarea>
+        </div>
+      </div>
+
+      <div class="row question">
+        <div class="three columns u-pull-right">      
+          <button class="send-btn" type="button">Send</button>
+        </div>
+        <p class="hide field-message animate"> *All fields are mandatory </p>
+      </div>
+
+    </div>
+  </div>
+
+</template>

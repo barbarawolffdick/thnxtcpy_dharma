@@ -202,26 +202,12 @@ if(Meteor.isClient) {
     }
   });
 
-  Template.stepCounter.helpers({
-    counter: function() {
-      return Session.get('stepCounter');
-    }
-  });
-
   Template.confirmation.helpers({
     companyName: function() {
       return Session.get('companyName');
     }
   });
 }
-
-
-Router.route('/', function () {
-  this.render('home');
-});
-
-Router.route('tell_your_history');
-Router.route('confirmation');
 
 
 
