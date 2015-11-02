@@ -66,13 +66,16 @@ a.call-to-action{
   font-family: "raleway-bold", arial, sans-serif;
   text-decoration: none;
   border: 0.5rem solid white;
-  margin-left: 36%;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  display: block;
+  width: 60%;
+  margin-left: 19%;
+  margin-top: 6%;
 }
 
 a.call-to-action:hover{
@@ -189,7 +192,30 @@ a.call-to-action:hover{
   border-left: 3rem solid white;
   border-right: 3rem solid white;
   height: 56rem;
-  padding-top: 30rem;
+}
+
+.jambo-tron-footer p{
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 125%;
+  width: 51%;
+  margin-left: 25%;
+  margin-top: 19%;
+  margin-bottom: 3%;
+}
+
+.jambo-tron-footer .get-in-touch{
+  display: block;
+  font-size: 2.7rem;
+  color: #fff;
+  font-family: "raleway-bold", arial, sans-serif;
+  text-decoration: none;
+  border: 0.5rem solid white;
+  padding: 1rem 0;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 6%;
 
 }
 
@@ -484,23 +510,25 @@ body {
 
 @media (max-width: 768px){
   .jambo-tron p {
-    font-size: 24px;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 60%;
     margin-bottom: 12%;
-    width: 80%;
+    width: 90%;
   }
 
   a.call-to-action{
     font-size: 13px;
-    margin-left: 10%;
+    margin-top: 10px;
   }
 
   .jambo-tron{
     background-image: url(banner-sm.png);
-    height: 57rem;
+    height: 51rem;
     background-position: center;
+    border-left: 2rem solid white;
+    border-right: 2rem solid white;
     }
 
   header img {
@@ -515,20 +543,24 @@ body {
 
   .what h3 {
       width: 100%;
-      margin-bottom: 25px;
+      margin-bottom: 10%;
       font-size: 2rem;
+      padding-left: 2%;
+      padding-right: 3%;
     }
 
   .what p {
       font-size: 14px;
       width: 100%;
+      padding-left: 2%;
+      padding-right: 3%;
     }
 
-.how{
-    margin-bottom: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
+  .how{
+      margin-bottom: 4rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
 
   .how h2{
     margin-bottom: 9%
@@ -571,7 +603,26 @@ body {
     margin-top: 10%;
     margin-bottom: 10%;
   }
+  .jambo-tron-footer{
+    height: 30rem;
+    background-position: center;
+    border-left: 2rem solid white;
+    border-right: 2rem solid white;
+    }
 
+  .jambo-tron-footer p{
+    width: 100%;
+    font-size: 25px;
+    margin-top: 34%;
+    margin-left: 0;
+  }
+
+.jambo-tron-footer .get-in-touch{
+    padding: 1rem 1rem;
+    width: 75%;
+    margin-left: 13%;
+    font-size: 2.2rem;
+  }
 }
 
 
