@@ -497,74 +497,81 @@ body {
     margin-left: 10%;
   }
 
-.jambo-tron{
-  background-image: url(banner-sm.png);
-  height: 57rem;
-  background-position: center;
+  .jambo-tron{
+    background-image: url(banner-sm.png);
+    height: 57rem;
+    background-position: center;
+    }
+
+  header img {
+      width: 50%;
+      margin-left: 20%;
+    }
+
+  .what, .how{
+    padding-bottom: 4rem;
+    padding-top: 2rem;
   }
 
-header img {
-    width: 50%;
-    margin-left: 20%;
+  .what h3 {
+      width: 100%;
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+  .what p {
+      font-size: 14px;
+      width: 100%;
+    }
+
+.how{
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 
-.what, .how{
-  padding-bottom: 4rem;
-  padding-top: 2rem;
-}
+  .how h2{
+    margin-bottom: 9%
+  }
 
-.what h3 {
+  .how .cards .card {
+    background-color: #fff;
     width: 100%;
-    margin-bottom: 25px;
-    font-size: 2rem;
+    height: 100%;
+    float: left;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 8%;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-bottom: 4%;
+
   }
 
-.what p {
-    font-size: 14px;
-    width: 100%;
+  .how .cards .card img {
+    width: 20%;
+    margin: 0;
+    float: left;
   }
 
-.how h2{
-  margin-bottom: 9%
-}
+  .how .cards .card p {
+    margin-left: 8%; 
+    margin-right: 0;
+    float: left;
+    width: 53%;
+    text-align: left;
+    margin-top: 3%;
+    line-height: 121%;
+  }
 
-.how .cards .card {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  float: left;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 8%;
-  padding-top: 4%;
-  padding-left: 6%;
-  padding-bottom: 4%;
+  .quote p {
+    margin-left: 10%;
+    font-size: 21px;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 
-}
-
-.how .cards .card img {
-  width: 20%;
-  margin: 0;
-  float: left;
-}
-
-.how .cards .card p {
-  margin-left: 8%; 
-  margin-right: 0;
-  float: left;
-  width: 53%;
-  text-align: left;
-  margin-top: 3%;
-  line-height: 121%;
-}
-
-.quote p {
-  margin-left: 10%;
-  font-size: 21px;
-  width: 90%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
 }
 
 
